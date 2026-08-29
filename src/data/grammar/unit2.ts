@@ -120,7 +120,7 @@ export const UNIT2_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး သတိထားရမယ့် အချက်တွေကို ပြန်ချုပ်ပေးမယ်။ တစ် — ဝိသေသနစုက ရှင်းပြမယ့် နာမ်ရဲ့ နောက်မှာပဲ ရောက်ရမယ်၊ ရှေ့မှာ လုံးဝ မထားရဘူး။ နှစ် — နာမ်က ကိုယ်တိုင်လုပ်နေရင် V-ing၊ ခံနေရရင် V3 ကို သုံးရမယ်။ သုံး — ကြိယာက အဓိကနာမ်နဲ့ပဲ ကိုက်ရမယ်၊ ဝိသေသနစုအတွင်းက နာမ်နဲ့ မကိုက်ရဘူး။ ဒီလောက်ဆို ရပါပြီ ကျောင်းသား၊ တော်တယ်နော်။",
         note: {
           ideaMy: "နာမ်တစ်လုံးကို ရှင်းပြရန် ၎င်း၏ နောက်တွင် ကော်မာမပါဘဲ ထည့်ထားသော စကားလုံးအစု — ဝိဘတ်၊ V-ing၊ V3 ဖြင့် စတင်နိုင်သည်။",
-          formula: "[Noun] + [Preposition / Verb-ing / Verb-3] + [Rest of Phrase]",
+          formula: "[Noun] + [Preposition] + [Noun Phrase] + [Rest of Sentence]",
           examples: [
             {
               en: "The girl in the green shirt is my classmate.",
@@ -254,7 +254,7 @@ export const UNIT2_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး ကျောင်းသားတွေ အများဆုံး မှားတတ်တဲ့ အချက်ကို ပြောပြရမယ်နော် — stative verbs ဆိုတဲ့ ကြိယာအုပ်စု ရှိတယ်။ like, want, know, believe, love, hate, own, need, understand ဆိုတဲ့ ကြိယာတွေက အခြေအနေကိုသာ ဖော်ပြတာမို့ ing လုံးဝ မထည့်ရဘူးနော်။ \"I am liking this song\" လို့ ရေးလို့ လုံးဝ မရဘူး၊ \"I like this song.\" လို့ပဲ အမြဲ ရေးရမှာပါ။ ဒီစကားလုံးတွေကို အလွတ်ကျက်ထားပြီး ing နဲ့ လုံးဝ မတွဲနဲ့လို့ မှတ်ထားပါ။ ဒီလောက်ဆို ရပါပြီ ကျောင်းသား၊ တော်တယ်နော်၊ အိမ်စာ ကျင့်ကြည့်ပါဦးနော်။",
         note: {
           ideaMy: "အလေ့အကျင့်/အမြဲမှန်သောအချက် = Present Simple (V+s/es)။ ယခုဖြစ်နေဆဲ = Present Continuous (am/is/are + V-ing)။ stative verbs တွင် ing လုံးဝ မထည့်ရ။",
-          formula: "Simple: [Subject]+[V(+s/es)] | Continuous: [Subject]+am/is/are+[V-ing]",
+          formula: "[Subject] + [Verb (+s/es)] + [Rest] | [Subject] + do/does + not + [Verb] + [Rest] | Do/Does + [Subject] + [Verb] + [Rest] ?",
           examples: [
             {
               en: "She usually watches TV, but right now she is reading a book.",

@@ -279,7 +279,7 @@ export const UNIT6_GRAMMAR: UnitGrammar = {
         note: {
           ideaMy:
             "wh-question → wh-word ဆက်ထား + ဝါကျအစီအစဉ် ပုံမှန်ပြန်ထား + question mark ဖျက်။ yes/no question → if/whether ထည့် + auxiliary verb ဖျက်။ Command → to+verb, Negative Command → not to+verb",
-          formula: "[Subject] + asked/told (+ object) + [wh-word / if / whether / (not) to] + [Rest]",
+          formula: "[Subject] + asked (+ object) + [wh-word] + [New Subject] + [Backshifted Verb] + [Rest]",
           examples: [
             { en: "\"Where do you live?\" → She asked me where I lived.", my: "wh-question ပြောင်းလဲပုံ" },
             { en: "\"Are you tired?\" → He asked me if I was tired.", my: "yes/no question ပြောင်းလဲပုံ" },

@@ -122,7 +122,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
           + "ဒါ့အပြင် ယနေ့ခေတ် စကားပြောထဲမှာတော့ လူတော်တော်များများက whom ကို သုံးဖို့ မေ့ကုန်ပြီး who နဲ့ပဲ ပြောလေ့ ရှိကြပါတယ်။ ဒါပေမယ့် စာရေးတဲ့အခါ၊ အထူးသဖြင့် စာမေးပွဲမှာတော့ who နဲ့ whom ကို မှန်ကန်စွာ ခွဲခြား သိထားဖို့ လိုအပ်ပါတယ်။ ကျောင်းသားတွေ မှန်ခဲစရာ တစ်ခုက whom သုံးရမယ့်နေရာမှာ ကိုယ်စားပြု စကားလုံး him ဒါမှမဟုတ် her ကို ထပ်ထည့်တတ်ကြတာပါ — ဒါက မှားပါတယ်၊ whom ကိုယ်တိုင်ကပဲ ကံ အဖြစ် ကိုယ်စားပြု ပြီးသားမို့ ထပ်ထည့်စရာ မလိုပါဘူး။",
         note: {
           ideaMy: "who = ကတ္တားနေရာ (he/she စမ်းသပ်)၊ whom = ကံနေရာ (him/her စမ်းသပ်)၊ preposition နောက်တွင် whom သာ",
-          formula: "[Noun] + who + [Verb]... / [Noun] + whom + [Subject] + [Verb]...",
+          formula: "[Noun] + who + [Verb] + [Rest]",
           examples: [
             { en: "The man who called me is my uncle.", my: "ဖုန်းခေါ်ခဲ့သော ယောက်ျားသည် ကျွန်တော့်ဦးလေး ဖြစ်ပါသည်။" },
             { en: "The man whom I met yesterday is my uncle.", my: "မနေ့က ကျွန်တော် တွေ့ခဲ့သော ယောက်ျားသည် ကျွန်တော့်ဦးလေး ဖြစ်ပါသည်။" },
@@ -248,7 +248,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
           + "အလွယ်ဆုံး စမ်းသပ်နည်းလေးက clause ကို ဖယ်ကြည့်တာပါ။ ဖယ်လိုက်ပြီး ဝါကျရဲ့ အဓိပ္ပာယ် ပျက်သွားရင် ဒါက defining clause ဖြစ်လို့ ကော်မာ မထည့်ရပါဘူး။ ဖယ်လိုက်ပေမယ့် ဝါကျရဲ့ အဓိကအဓိပ္ပာယ် မပျက်ဘူးဆိုရင် ဒါက non-defining clause ဖြစ်လို့ ကော်မာ ရှေ့နောက် ခြားပေးရပါတယ်။ ဒီစည်းမျဉ်းလေးကို မှတ်ထားရင် whose ပါတဲ့ ဝါကျတွေ ရေးရတာ လုံးဝ မခက်တော့ပါဘူးနော်။",
         note: {
           ideaMy: "whose + noun = ပိုင်ဆိုင်မှု (apostrophe မပါ)၊ who's = who is/has (apostrophe ပါ)၊ defining = ကော်မာမပါ၊ non-defining = ကော်မာပါ",
-          formula: "[Noun] + whose + [Possessed Noun] + [Verb]... (ကော်မာ ပါ/မပါ ကို clause အမျိုးအစားက ဆုံးဖြတ်)",
+          formula: "[Noun] + whose + [Possessed Noun] + [Verb] + [Rest]",
           examples: [
             { en: "The boy whose bag is red is my brother.", my: "အနီရောင် အိတ်ပိုင်ရှင် ကလေးသည် ကျွန်တော့်ညီ ဖြစ်ပါသည်။" },
             { en: "My teacher, whose son studies medicine, is very proud.", my: "ဆရာ၏ သားသည် ဆေးပညာ တက်ရောက်နေပြီး ဆရာသည် အလွန် ဂုဏ်ယူပါသည်။" },

@@ -253,7 +253,7 @@ export const UNIT8_GRAMMAR: UnitGrammar = {
           "ပြီးရင် comma အကြောင်းလေးလည်း ပြောရဦးမယ်၊ \"and\" နဲ့ ဆက်တဲ့ ဝါကျရှည်ကြီးတွေမှာ \"and\" ရဲ့ ရှေ့မှာ ကော်မာ ထားလို့ ရပေမယ့် ဝါကျတိုတိုလေးတွေမှာတော့ မထားလည်း ရပါတယ်။ ဒါပေမဲ့ \"so\" နဲ့ \"neither\" ပုံစံတွေ သုံးတဲ့အခါကျတော့ ကော်မာ ထားတာက စံပုံစံဖြစ်တဲ့အတွက် အမြဲထားပေးဖို့ လိုပါတယ်။ ဒါကြောင့် ဒီနေ့ ခေါင်းထဲမှာ မှတ်ထားရမယ့် အချက်တွေက — ကြိယာတူရင်သာ ဖျက်နိုင်တယ်၊ so ကို positive အတွက်၊ neither ကို negative အတွက်၊ ပြီးတော့ auxiliary ကို ကတ္တားနဲ့ tense အတိုင်း အမှန် ရွေးချယ်ရမယ် ဆိုတာတွေပါပဲနော်။ ဒီလောက်ဆို ရှင်းပြီထင်ပါတယ်၊ နောက်ထပ် သင်ခန်းစာမှာ ဆက်လက် တွေ့ကြရအောင်နော်။",
         note: {
           ideaMy: "ကြိယာတူပါက ဒုတိယအကြိမ် ဖျက်နိုင်သည်။ Positive → so + aux + subject, Negative → neither + aux + subject.",
-          formula: "[Sentence 1] + , + so/neither + [Auxiliary] + [Subject 2]",
+          formula: "[Subject 1] + [Verb] + [Object 1] + and + [Subject 2] + [Object 2] (Verb omitted)",
           examples: [
             { en: "She likes tea and he coffee.", my: "သူမက လက်ဖက်ရည်ကြိုက်၊ သူကတော့ ကော်ဖီကြိုက်သည်။" },
             { en: "My father drinks coffee, and so does my mother.", my: "အဖေက ကော်ဖီသောက်၊ အမေကလည်း ထို့အတူ သောက်သည်။" },

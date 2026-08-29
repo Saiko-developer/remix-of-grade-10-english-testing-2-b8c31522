@@ -250,7 +250,7 @@ export const UNIT3_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံးအနေနဲ့ \"either\" ဒါမှမဟုတ် \"neither\" ကို တစ်လုံးတည်း နာမ်စားအနေနဲ့လည်း သုံးလို့ရတယ်ဆိုတာ မှတ်ထားပေးပါ။ \"Neither is correct.\" ဆိုရင် \"နှစ်ခုစလုံး မမှန်ဘူး\" လို့ အဓိပ္ပာယ်ရပြီး ဒီလိုအခါမှာ ကြိယာကို အမြဲ အနည်းကိန်း သုံးရပါတယ်။ ကောင်းပြီဗျာ၊ ဒီသင်ခန်းစာလေးကို ကောင်းကောင်း နားလည်ပြီလို့ ယုံကြည်ပါတယ်၊ ဆက်လက်ပြီး လေ့ကျင့်ခန်း လုပ်ကြည့်ရအောင်နော်။",
         note: {
           ideaMy: "either...or = နှစ်ခုအနက် တစ်ခု (အပြု) | neither...nor = နှစ်ခုစလုံး မဟုတ် (အနှုတ်) | ကြိယာက အနီးဆုံးကတ္တားနဲ့သာ ကိုက်ရမည်",
-          formula: "Neither + [Subject 1] + nor + [Subject 2] + [Verb agreeing with Subject 2]",
+          formula: "Either + [Subject 1] + or + [Subject 2 (nearest)] + [Verb agreeing with Subject 2] + [Rest]",
           examples: [
             { en: "Either Tom or his brother is coming.", my: "တွမ် သို့မဟုတ် သူ့ညီအစ်ကို တစ်ဦးဦးသည် လာမည် ဖြစ်သည်။" },
             { en: "Neither my mother nor my father is free today.", my: "မိခင်နှင့် ဖခင် နှစ်ဦးစလုံးသည် ယနေ့ အားမလပ်ကြပါ။" },

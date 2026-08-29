@@ -127,7 +127,7 @@ export const UNIT7_GRAMMAR: UnitGrammar = {
           "ဒါပေမဲ့ ခံသဘောသို့ ဆောက်ဖို့ ကြိယာအားလုံး ရလို့ မရဘူးနော်။ \"sleep\", \"arrive\", \"go\" ကဲ့သို့ ကံ (Object) မယူနိုင်တဲ့ ကြိယာတွေကို ခံသဘောသို့ ပြောင်းလို့ လုံးဝ မရဘူး။ ဒါကြောင့် ဝါကျကို ခံသဘောသို့ ပြောင်းခင် \"ဒီကြိယာနောက်မှာ ကံ ရှိသလား\" လို့ အမြဲ ကိုယ့်ကိုယ်ကို မေးဖို့ လိုပါလိမ့်မယ်။ ကောင်းပြီ ကျောင်းသား၊ ဒီလောက်ဆို ပထမ Section ရပါပြီ။",
         note: {
           ideaMy: "ပြုသဘောရဲ့ ကံ (Object) ကို ကတ္တားသစ်အဖြစ် ရှေ့ကို ရွှေ့ပြီး \"be + V3\" နဲ့ ဆောက်ထားတဲ့ ဝါကျပုံစံ။ ပြုလုပ်သူကို by + Agent ဖြင့် ညွှန်းလို့ ရသလို လုံးဝ ချန်ထားလည်း ရသည်။",
-          formula: "[Object → New Subject] + [be] + [V3] + (by + [Agent])",
+          formula: "[New Subject (old Object)] + [be] + [Past Participle] + by + [Agent (old Subject)]",
           examples: [
             { en: "The meal is cooked by the chef.", my: "အစားအစာကို စားဖိုမှူးက ချက်ပြုတ်ပါသည်။" },
             { en: "My phone was stolen.", my: "ကျွန်တော့်ဖုန်း ခိုးခံရသည်။" },
@@ -261,7 +261,7 @@ export const UNIT7_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံးအနေနဲ့ သတိထားရမယ့် အမှားလေးတွေ ပြောပြချင်ပါတယ်။ \"now\" ဆိုတဲ့ စကားလုံး တွေ့ရင် being ထည့်ဖို့ မမေ့ပါနဲ့။ Perfect ကာလမှာ been ကို မမေ့ပါနဲ့။ Modal နောက်မှာ be ရော V3 ရော နှစ်ခုစလုံး ပါရမယ်ဆိုတာလည်း အမြဲ သတိရပါနော်။ ဒီလောက်ဆို ခံသဘော အပြည့်အစုံ နားလည်ပြီလို့ ဆိုနိုင်ပါပြီ ကျောင်းသား၊ တော်တယ်နော်။",
         note: {
           ideaMy: "ခံသဘော ဆောက်ရာတွင် V3 ကို မပြောင်းဘဲ \"be\" ကြိယာကိုသာ ကာလအလိုက် ပြောင်းရသည်။ Continuous တွင် being, Perfect တွင် been ပါရမည်; Modal နောက်တွင် be ကို base ပုံစံအတိုင်း ထားရမည်။",
-          formula: "Present: is/are + V3 | Past: was/were + V3 | Cont.: is being + V3 | Perfect: has been + V3 | Modal: can/must be + V3",
+          formula: "[Subject] + [am/is/are] + being + [Past Participle] + (by + [Agent])",
           examples: [
             { en: "The work has been finished.", my: "အလုပ်ကို ပြီးမြောက်ပြီ ဖြစ်သည်။" },
             { en: "This medicine must be taken twice a day.", my: "ဒီဆေးကို တစ်ရက်နှစ်ကြိမ် သောက်ရပါမည်။" },

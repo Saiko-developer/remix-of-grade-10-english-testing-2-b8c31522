@@ -122,7 +122,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံးအနေနဲ့ မေးခွန်းနဲ့ ငြင်းဆိုပုံကို ပြောပြမယ်။ will နဲ့ မေးခွန်းလုပ်ရင် will ကို ကတ္တားရှေ့ ရွှေ့လိုက်တာပါပဲ — \"Will you come?\" ။ be going to နဲ့ဆိုရင် be ကို ရှေ့ ရွှေ့တယ် — \"Are you going to come?\" ။ ငြင်းဆိုချင်ရင် will ရဲ့ နောက်မှာ not ထည့်ပြီး won't လို့ ချုံ့နိုင်တယ်၊ be going to ကတော့ be ရဲ့ နောက်မှာ not ထည့်ရုံပါပဲ — \"is not going to\"။ ဒီနေရာအထိ နားလည်ရင် will, be going to, present continuous သုံးမျိုးလုံးကို ကွဲကွဲပြားပြား သုံးနိုင်ပါပြီ ကျောင်းသား၊ တော်တယ်နော်။",
         note: {
           ideaMy: "Will — ချက်ချင်းဆုံးဖြတ်ချက်/ခန့်မှန်းချက်၊ Be going to — ကြိုတင်စီစဉ်ချက်/မြင်ရသောလက္ခဏာ၊ Present Continuous — ချိန်းထားပြီးသား အစီအစဉ်။",
-          formula: "[Subject] + will/am-is-are going to/am-is-are + [Verb] + [Future Time]",
+          formula: "[Subject] + will (+ not) + [Base Verb] + [Rest]",
           examples: [
             { en: "I will answer the phone.", my: "ကျွန်တော် ဖုန်းကို ဖြေမည်။" },
             { en: "She is going to study medicine.", my: "သူမသည် ဆေးပညာ သင်ကြားမည် ဖြစ်သည်။" },
@@ -249,7 +249,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး ကော်မာ စည်းမျဉ်းကို ပြောပြမယ်။ if-clause ကို ဝါကျရဲ့ ရှေ့ဆုံးမှာ ထားရင် if-clause ဆုံးတဲ့ နေရာမှာ ကော်မာ တစ်လုံး ခံရမယ် — \"If it rains, we will stay home.\" ဒါပေမယ့် main clause ကို ရှေ့ဆုံးမှာ ပြောင်းထားရင်တော့ ကော်မာ လုံးဝ မလိုတော့ဘူး — \"We will stay home if it rains.\" ဒီနှစ်ချက်ကို အမြဲ နှိုင်းယှဉ်ပြီး မှတ်ထားပါ ကျောင်းသား။ Zero, First, Second Conditional သုံးမျိုးလုံးကို ဒီနေ့ သေချာ ခွဲခြား လေ့ကျင့်ကြည့်ပါနော်။",
         note: {
           ideaMy: "Zero — အမြဲမှန်သော အချက်၊ First — ဖြစ်နိုင်ခြေများသော အနာဂတ်၊ Second — စိတ်ကူးယဉ်/ဖြစ်နိုင်ခြေနည်းသော အခြေအနေ။ if-clause ထဲတွင် will ဘယ်တော့မှ မထည့်ရ။",
-          formula: "If + [Present/Past Simple], [Present Simple / will / would] + [Verb]",
+          formula: "If + [Subject] + [Present Simple Verb], [Subject] + [Present Simple Verb].",
           examples: [
             { en: "If you heat ice, it melts.", my: "ရေခဲကို ပူအောင်လုပ်လျှင် အရည်ပျော်တတ်သည်။" },
             { en: "If it rains, I will stay home.", my: "မိုးရွာလျှင် ကျွန်တော် အိမ်တွင် နေမည်။" },

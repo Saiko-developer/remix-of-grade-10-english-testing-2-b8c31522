@@ -130,7 +130,7 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး ဆရာ အထူးပြောချင်တာက \"used to\" နဲ့ \"be used to\" ကို လုံးဝ မရောသွယ်ဖို့ပါပဲ။ ဒီနှစ်ခုက အသံထွက်လည်း ဆင်တူပေမဲ့ အဓိပ္ပာယ်က လုံးဝ မတူဘူးနော်။ \"used to + V1\" ကတော့ အတိတ်က အလေ့အထ၊ အခုမရှိတော့ဘူး ဆိုတဲ့ အဓိပ္ပာယ်ဆိုတာ ပြောခဲ့ပြီးပါပြီ။ \"be used to\" ကတော့ လုံးဝ မတူတဲ့ အဓိပ္ပာယ်ရှိတယ် — \"တစ်ခုခုကို ကျင့်သားရနေပြီ၊ အသားကျနေပြီ\" ဆိုတဲ့ လက်ရှိ ဖြစ်နေဆဲ အခြေအနေကို ပြောတာပါ။ ဥပမာ \"I am used to waking up early\" ဆိုရင် စောစောနိုးဖို့ ကျင့်သားရနေပြီ ဆိုတဲ့ အဓိပ္ပာယ်ပါ။ ဒီနေရာမှာ \"used to\" ရှေ့မှာ \"am/is/are/was/were\" ပါလာတတ်ပြီး၊ ကြိယာကလည်း \"-ing\" ပုံစံ ဖြစ်ရမယ်ဆိုတာ သတိရပါဦးနော်။ ဒီအချက် နှစ်ခုကို ကွဲအောင် အမြဲ လေ့ကျင့်ထားရင် စာမေးပွဲမှာ အမှတ် ရဲရဲကျန်နိုင်ပါလိမ့်မယ်ဗျာ။",
         note: {
           ideaMy: "used to + V1 = အတိတ်က အလေ့အထ/အခြေအနေ ယခု မရှိတော့ / be used to + V-ing = ကျင့်သားရပြီးသား လက်ရှိအခြေအနေ",
-          formula: "[Subject] + used to + [V1] ... / [Subject] + didn't use to + [V1] ... / Did + [Subject] + use to + [V1]...?",
+          formula: "[Subject] + used to + [V1] + [Rest]",
           examples: [
             { en: "I used to smoke, but I don't anymore.", my: "ကျွန်တော် အရင်က ဆေးလိပ် သောက်ခဲ့ဖူးတယ်၊ ဒါပေမဲ့ အခု မသောက်တော့ဘူး။" },
             { en: "Did she use to work here?", my: "သူမ အရင်က ဒီမှာ အလုပ်လုပ်ခဲ့ဖူးလား။" },
@@ -265,7 +265,7 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး သတိပေးချင်တာက stative verb လို့ခေါ်တဲ့ know, like, want, believe စတဲ့ ကြိယာတွေကို Present Perfect Continuous နဲ့ လုံးဝ မသုံးရဘူး ဆိုတာပါပဲ။ \"She has been knowing him for ten years\" ဆိုတာ လုံးဝ မှားနေပြီ၊ \"She has known him for ten years\" လို့ Present Perfect ရိုးရိုးနဲ့ပဲ ပြောရမှာပါ။ ဒီနှစ်ချက်ကို ကွဲကွဲပြားပြား သတိရထားရင် စာမေးပွဲမှာ ရဲရဲ ဖြေနိုင်ပါလိမ့်မယ်ဗျာ။",
         note: {
           ideaMy: "Present Perfect = ရလဒ်ကို အလေးပေး (have/has + V3) / Present Perfect Continuous = ကြာချိန်၊ ဆက်တိုက်ဖြစ်နေမှုကို အလေးပေး (have/has + been + V-ing)",
-          formula: "[Subject] + have/has + V3 + ... | [Subject] + have/has + been + V-ing + for/since + [Time]",
+          formula: "[Subject] + have/has + (not) + [V3] + [Rest] | Have/Has + [Subject] + [V3] + [Rest]?",
           examples: [
             { en: "I have already eaten breakfast.", my: "ကျွန်တော် မနက်စာ စားပြီးသားဖြစ်ပါသည်။" },
             { en: "They have been waiting for two hours.", my: "သူတို့သည် နှစ်နာရီကြာအောင် ဆက်တိုက် စောင့်နေကြသည်။" },

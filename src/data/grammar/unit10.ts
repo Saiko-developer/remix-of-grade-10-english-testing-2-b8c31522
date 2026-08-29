@@ -118,7 +118,7 @@ export const UNIT10_GRAMMAR: UnitGrammar = {
           "ဒါကြောင့် ဒီဖွဲ့စည်းပုံကို သုံးတဲ့အခါ အဆင့်ဆင့် စဉ်းစားပါ — ပထမဆုံး ဝါကျနှစ်ကြောင်းရဲ့ တူညီတဲ့ ကတ္တားနဲ့ အကူကြိယာကို ရှာပါ၊ ပြီးရင် \"not only\" ကို ပထမ အချက်ရှေ့မှာ ထားပါ၊ ပြီးရင် ထပ်နေတဲ့ ကတ္တားကို ဖျက်ပြီး \"but also\" ကို ဒုတိယ အချက်ရှေ့မှာ ထားပါ၊ နောက်ဆုံး Parallel ဖြစ်မဖြစ် ပြန်စစ်ပါ။ ဒါသာ လုပ်တတ်ရင် ဒီသဒ္ဒါက အလွန်လွယ်ကူပါတယ်ဗျာ။",
         note: {
           ideaMy: "\"...တစ်ခုတည်းမက ...လည်း ဖြစ်သေးသည်\" — Parallel Structure နှင့် Inversion (ဝါကျရှေ့ဆုံးတွင် ရှိလျှင်) သတိပြုရန်",
-          formula: "[Subject] + [Verb] + not only + [Part A] + but also + [Part B]  |  Not only + [Aux] + [Subject] + [Verb], but [Subject] also + [Rest]",
+          formula: "[Subject] + [Verb] + not only + [Part A] + but also + [Part B]",
           examples: [
             { en: "She can not only sing but also dance.", my: "သူမသည် သီဆိုရုံသာမက ကလည်း ကနိုင်ပါသည်။" },
             { en: "Not only is he rich, but he is also kind.", my: "သူသည် ချမ်းသာရုံသာမက စိတ်ကောင်းလည်း ရှိပါသည်။" },
@@ -246,7 +246,7 @@ export const UNIT10_GRAMMAR: UnitGrammar = {
           "မှားတတ်တဲ့ နေရာလေးတွေကိုလည်း ပြောပြချင်တယ်နော်။ တချို့ကျောင်းသားတွေက \"the\" ကို မေ့ကျန်ခဲ့တတ်တယ်၊ \"More you sleep, more tired you feel\" ဆိုပြီး ရေးမိတတ်တယ်၊ ဒါဟာ လုံးဝ မှားတာပါ၊ \"the\" ကို နှစ်ခါစလုံး ထည့်ပေးရမယ်။ နောက်တစ်ခုက adjective တစ်လုံးတည်းအတွက် \"-er\" နဲ့ \"more\" ကို တွဲမသုံးရဘူးနော်၊ \"happy\" ဆိုရင် \"happier\" လို့ပဲ ရေးရမယ်၊ \"more happier\" လို့ ရေးလို့ မရဘူး။ ဒီအချက်တွေကို သတိထားလိုက်ရင် ဒီသဒ္ဒါက အလွန်လွယ်ကူသွားပါလိမ့်မယ်ဗျာ။",
         note: {
           ideaMy: "\"ပိုမို ...လေ ပိုမို ...လေ\" — ခွက်နှစ်ခုစလုံး \"the\" ဖြင့် စရမည်၊ ကြားတွင် ကော်မာ ဖြစ်မဖြစ် ခံရမည်",
-          formula: "The + comparative + [Subject] + [Verb], the + comparative + [Subject] + [Verb]",
+          formula: "The + [Adjective]-er + [Subject 1] + [Verb 1] + , + the + [Adjective]-er + [Subject 2] + [Verb 2]",
           examples: [
             { en: "The harder you work, the more you earn.", my: "ပိုပြီး ကြိုးစားလေ ပိုပြီး ဝင်ငွေရလေ ဖြစ်ပါသည်။" },
             { en: "The more, the merrier.", my: "လူများလေ ပျော်ရွှင်လေ ဖြစ်ပါသည်။" },
