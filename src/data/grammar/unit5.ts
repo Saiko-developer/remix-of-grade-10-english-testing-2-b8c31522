@@ -88,7 +88,7 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleMy: "ကျွန်တော့်အဖိုးသည် ညနေတိုင်း ပုံပြင်များကို ကျွန်တော်တို့အား ပြောပြခဲ့ဖူးပါသည်။",
             parts: [
               { chunk: "My grandfather", role: "[Subject]", glossMy: "ကျွန်တော့်အဖိုး — ကတ္တား" },
-              { chunk: "used to", role: "used to", glossMy: "အတိတ်က ... ခဲ့ဖူးသည် — ဖွဲ့စည်းပုံ" },
+              { chunk: "used to", role: "[Past Habit Marker]", glossMy: "အတိတ်က ... ခဲ့ဖူးသည် — ဖွဲ့စည်းပုံ" },
               { chunk: "tell", role: "[V1]", glossMy: "ပြောပြသည် — ကြိယာ base form" },
               { chunk: "us folk tales every night", role: "[Rest]", glossMy: "ကျွန်တော်တို့အား ညနေတိုင်း ပုံပြင်များကို" },
             ],
@@ -100,8 +100,8 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleMy: "ကျွန်တော်တို့ အိမ်တွင် တီဗီတစ်လုံးမှ ရှိခဲ့ဖူးခြင်း မရှိခဲ့ပါ။",
             parts: [
               { chunk: "We", role: "[Subject]", glossMy: "ကျွန်တော်တို့ — ကတ္တား" },
-              { chunk: "didn't", role: "did not", glossMy: "did + not ၏ တိုတောင်းပုံစံ" },
-              { chunk: "use to", role: "use to", glossMy: "\"used\" မှ d ဖယ်ထားသော base form" },
+              { chunk: "didn't", role: "[Negative Auxiliary]", glossMy: "did + not ၏ တိုတောင်းပုံစံ" },
+              { chunk: "use to", role: "[Past Habit Marker: use to]", glossMy: "\"used\" မှ d ဖယ်ထားသော base form" },
               { chunk: "have", role: "[V1]", glossMy: "ရှိသည် — ကြိယာ base form" },
               { chunk: "a television at home", role: "[Rest]", glossMy: "အိမ်တွင် တီဗီတစ်လုံး" },
             ],
@@ -112,9 +112,9 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleEn: "Did you use to live in Yangon?",
             exampleMy: "မင်း အရင်က ရန်ကုန်မှာ နေခဲ့ဖူးလား။",
             parts: [
-              { chunk: "Did", role: "Did", glossMy: "မေးခွန်းအတွက် အထောက်အကူပြု ကြိယာ" },
+              { chunk: "Did", role: "[Question Auxiliary]", glossMy: "မေးခွန်းအတွက် အထောက်အကူပြု ကြိယာ" },
               { chunk: "you", role: "[Subject]", glossMy: "မင်း — ကတ္တား" },
-              { chunk: "use to", role: "use to", glossMy: "did ရှိပြီးသားကြောင့် base form" },
+              { chunk: "use to", role: "[Past Habit Marker: use to]", glossMy: "did ရှိပြီးသားကြောင့် base form" },
               { chunk: "live", role: "[V1]", glossMy: "နေထိုင်သည် — ကြိယာ base form" },
               { chunk: "in Yangon", role: "[Rest]", glossMy: "ရန်ကုန်မှာ" },
             ],
@@ -130,7 +130,7 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး ဆရာ အထူးပြောချင်တာက \"used to\" နဲ့ \"be used to\" ကို လုံးဝ မရောသွယ်ဖို့ပါပဲ။ ဒီနှစ်ခုက အသံထွက်လည်း ဆင်တူပေမဲ့ အဓိပ္ပာယ်က လုံးဝ မတူဘူးနော်။ \"used to + V1\" ကတော့ အတိတ်က အလေ့အထ၊ အခုမရှိတော့ဘူး ဆိုတဲ့ အဓိပ္ပာယ်ဆိုတာ ပြောခဲ့ပြီးပါပြီ။ \"be used to\" ကတော့ လုံးဝ မတူတဲ့ အဓိပ္ပာယ်ရှိတယ် — \"တစ်ခုခုကို ကျင့်သားရနေပြီ၊ အသားကျနေပြီ\" ဆိုတဲ့ လက်ရှိ ဖြစ်နေဆဲ အခြေအနေကို ပြောတာပါ။ ဥပမာ \"I am used to waking up early\" ဆိုရင် စောစောနိုးဖို့ ကျင့်သားရနေပြီ ဆိုတဲ့ အဓိပ္ပာယ်ပါ။ ဒီနေရာမှာ \"used to\" ရှေ့မှာ \"am/is/are/was/were\" ပါလာတတ်ပြီး၊ ကြိယာကလည်း \"-ing\" ပုံစံ ဖြစ်ရမယ်ဆိုတာ သတိရပါဦးနော်။ ဒီအချက် နှစ်ခုကို ကွဲအောင် အမြဲ လေ့ကျင့်ထားရင် စာမေးပွဲမှာ အမှတ် ရဲရဲကျန်နိုင်ပါလိမ့်မယ်ဗျာ။",
         note: {
           ideaMy: "used to + V1 = အတိတ်က အလေ့အထ/အခြေအနေ ယခု မရှိတော့ / be used to + V-ing = ကျင့်သားရပြီးသား လက်ရှိအခြေအနေ",
-          formula: "[Subject] + used to + [V1] ... / [Subject] + didn't use to + [V1] ... / Did + [Subject] + use to + [V1]...?",
+          formula: "[Subject] + used to + [V1] + [Rest]",
           examples: [
             { en: "I used to smoke, but I don't anymore.", my: "ကျွန်တော် အရင်က ဆေးလိပ် သောက်ခဲ့ဖူးတယ်၊ ဒါပေမဲ့ အခု မသောက်တော့ဘူး။" },
             { en: "Did she use to work here?", my: "သူမ အရင်က ဒီမှာ အလုပ်လုပ်ခဲ့ဖူးလား။" },
@@ -223,9 +223,12 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleMy: "သူတို့သည် ပရောဂျက်ကို ပြီးအောင် လုပ်ပြီးသားဖြစ်ပြီး၊ ကျွန်တော်ကတော့ မစတင်ရသေးပါ။",
             parts: [
               { chunk: "They", role: "[Subject]", glossMy: "သူတို့ — ကတ္တား" },
-              { chunk: "have already finished", role: "have + already + V3", glossMy: "ပြီးအောင် လုပ်ပြီးသားဖြစ်သည် — already က have ၏ နောက်၊ ကြိယာ၏ ရှေ့" },
+              { chunk: "have already finished", role: "[Auxiliary + already + Past Participle]", glossMy: "ပြီးအောင် လုပ်ပြီးသားဖြစ်သည် — already က have ၏ နောက်၊ ကြိယာ၏ ရှေ့" },
               { chunk: "the project", role: "[Object]", glossMy: "ပရောဂျက် — ကံ" },
-              { chunk: "I haven't started yet", role: "[Subject] + haven't + V3 + yet", glossMy: "ကျွန်တော် မစတင်ရသေး — yet ဝါကျအဆုံးတွင်" },
+              { chunk: "but", role: "[Contrast Conjunction]", glossMy: "သို့သော် — ဆန့်ကျင်ဘက် အဓိပ္ပာယ် ချိတ်ဆက်သည်" },
+              { chunk: "I", role: "[Subject 2]", glossMy: "ကျွန်တော် — ဒုတိယဝါကျ၏ ကတ္တား" },
+              { chunk: "haven't started", role: "[Negative Auxiliary + Past Participle]", glossMy: "မစတင်ရသေးပါ — အငြင်း Present Perfect" },
+              { chunk: "yet", role: "[Adverb: yet]", glossMy: "သေးပါ — အငြင်းဝါကျ၏ အဆုံးတွင် ထားရသည်" },
             ],
           },
           {
@@ -235,22 +238,22 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleMy: "သူသည် ဤနေရာတွင် ၂၀၁၈ ခုနှစ်မှစ၍ အလုပ်လုပ်နေဆဲ ဖြစ်ပါသည်။",
             parts: [
               { chunk: "He", role: "[Subject]", glossMy: "သူ — ကတ္တား, single ဖြစ်၍ has" },
-              { chunk: "has been working", role: "has + been + V-ing", glossMy: "ဆက်တိုက် အလုပ်လုပ်နေဆဲ — Continuous ပုံစံ" },
+              { chunk: "has been working", role: "[Auxiliary + been + Verb-ing]", glossMy: "ဆက်တိုက် အလုပ်လုပ်နေဆဲ — Continuous ပုံစံ" },
               { chunk: "here", role: "[Rest]", glossMy: "ဤနေရာတွင်" },
-              { chunk: "since 2018", role: "since + [Time]", glossMy: "၂၀၁၈ ခုနှစ်မှစ၍ — အစပြု အချိန်မှတ်" },
+              { chunk: "since 2018", role: "[since + Time Marker]", glossMy: "၂၀၁၈ ခုနှစ်မှစ၍ — အစပြု အချိန်မှတ်" },
             ],
           },
           {
             labelMy: "ပုံစံ ၃ — အတွေ့အကြုံမေးခွန်း (ever/never)",
             formula: "Have/Has + [Subject] + ever + [V3] + ...? | [Subject] + have/has + never + [V3] + ...",
-            exampleEn: "Have you ever visited Bagan? — No, I have never been there.",
-            exampleMy: "မင်း ပုဂံကို တစ်ခါမှ သွားဖူးလား။ — မရှိသေးပါ၊ ကျွန်တော် ဘယ်တော့မှ မသွားဖူးပါ။",
+            exampleEn: "Have you ever visited Bagan?",
+            exampleMy: "မင်း ပုဂံကို တစ်ခါမျှ သွားရောက်ဖူးပါသလား။",
             parts: [
-              { chunk: "Have", role: "Have", glossMy: "မေးခွန်းအထောက်အကူပြု" },
+              { chunk: "Have", role: "[Question Auxiliary]", glossMy: "မေးခွန်းအထောက်အကူပြု" },
               { chunk: "you", role: "[Subject]", glossMy: "မင်း — ကတ္တား" },
-              { chunk: "ever", role: "ever", glossMy: "တစ်ခါမျှ — have ၏ နောက်" },
+              { chunk: "ever", role: "[Frequency Adverb]", glossMy: "တစ်ခါမျှ — have ၏ နောက်" },
               { chunk: "visited", role: "[V3]", glossMy: "သွားရောက်ခဲ့ဖူးသည်" },
-              { chunk: "I have never been there", role: "[Subject] + have + never + V3", glossMy: "ဘယ်တော့မှ မသွားဖူး — never က have ၏ နောက်" },
+              { chunk: "Bagan", role: "[Object]", glossMy: "ပုဂံကို — ကံ" },
             ],
           },
         ],
@@ -265,7 +268,7 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး သတိပေးချင်တာက stative verb လို့ခေါ်တဲ့ know, like, want, believe စတဲ့ ကြိယာတွေကို Present Perfect Continuous နဲ့ လုံးဝ မသုံးရဘူး ဆိုတာပါပဲ။ \"She has been knowing him for ten years\" ဆိုတာ လုံးဝ မှားနေပြီ၊ \"She has known him for ten years\" လို့ Present Perfect ရိုးရိုးနဲ့ပဲ ပြောရမှာပါ။ ဒီနှစ်ချက်ကို ကွဲကွဲပြားပြား သတိရထားရင် စာမေးပွဲမှာ ရဲရဲ ဖြေနိုင်ပါလိမ့်မယ်ဗျာ။",
         note: {
           ideaMy: "Present Perfect = ရလဒ်ကို အလေးပေး (have/has + V3) / Present Perfect Continuous = ကြာချိန်၊ ဆက်တိုက်ဖြစ်နေမှုကို အလေးပေး (have/has + been + V-ing)",
-          formula: "[Subject] + have/has + V3 + ... | [Subject] + have/has + been + V-ing + for/since + [Time]",
+          formula: "[Subject] + have/has + (not) + [V3] + [Rest] | Have/Has + [Subject] + [V3] + [Rest]?",
           examples: [
             { en: "I have already eaten breakfast.", my: "ကျွန်တော် မနက်စာ စားပြီးသားဖြစ်ပါသည်။" },
             { en: "They have been waiting for two hours.", my: "သူတို့သည် နှစ်နာရီကြာအောင် ဆက်တိုက် စောင့်နေကြသည်။" },

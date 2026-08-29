@@ -79,9 +79,11 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleMy: "ဘေးအိမ်တွင် နေထိုင်သော အမျိုးသမီးသည် ဆရာဝန် ဖြစ်ပါသည်။",
             parts: [
               { chunk: "The woman", role: "[Noun]", glossMy: "အမျိုးသမီးသည် — ရှင်းပြခံရမည့် အဓိကနာမ်" },
-              { chunk: "who", role: "who", glossMy: "ဆက်စပ်နာမ်စား — ကတ္တားနေရာ" },
+              { chunk: "who", role: "[Relative Pronoun: Subject]", glossMy: "ဆက်စပ်နာမ်စား — ကတ္တားနေရာ" },
               { chunk: "lives", role: "[Verb]", glossMy: "နေထိုင်သည် — who နှင့် ကိုက်ညီသော ကြိယာ" },
-              { chunk: "next door", role: "[Rest]", glossMy: "ဘေးအိမ်တွင်" },
+              { chunk: "next door", role: "[Rest of Clause]", glossMy: "ဘေးအိမ်တွင်" },
+              { chunk: "is", role: "[Main Linking Verb]", glossMy: "ဖြစ်သည် — အဓိကဝါကျ၏ ဆက်စပ်ကြိယာ" },
+              { chunk: "a doctor", role: "[Complement]", glossMy: "ဆရာဝန် — ဖြည့်စွက်ပုဒ် (ကံ မဟုတ်ပါ)" },
             ],
           },
           {
@@ -91,9 +93,11 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleMy: "ဆရာမ ချီးမွမ်းခဲ့သော ကလေးသည် ကျွန်တော့်အတန်းဖော် ဖြစ်ပါသည်။",
             parts: [
               { chunk: "The boy", role: "[Noun]", glossMy: "ကလေးသည် — ရှင်းပြခံရမည့် အဓိကနာမ်" },
-              { chunk: "whom", role: "whom", glossMy: "ဆက်စပ်နာမ်စား — ကံနေရာ" },
+              { chunk: "whom", role: "[Relative Pronoun: Object]", glossMy: "ဆက်စပ်နာမ်စား — ကံနေရာ" },
               { chunk: "the teacher", role: "[Subject]", glossMy: "ဆရာမ — ဆက်စပ်ခန်းအတွင်းက ကတ္တား" },
               { chunk: "praised", role: "[Verb]", glossMy: "ချီးမွမ်းခဲ့သည်" },
+              { chunk: "is", role: "[Main Linking Verb]", glossMy: "ဖြစ်သည် — အဓိကဝါကျ၏ ဆက်စပ်ကြိယာ" },
+              { chunk: "my classmate", role: "[Complement]", glossMy: "ကျွန်တော့်အတန်းဖော် — ဖြည့်စွက်ပုဒ်" },
             ],
           },
           {
@@ -104,9 +108,11 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "The man", role: "[Noun]", glossMy: "ယောက်ျားသည် — အဓိကနာမ်" },
               { chunk: "with", role: "[Preposition]", glossMy: "နှင့်အတူ" },
-              { chunk: "whom", role: "whom", glossMy: "ကံနေရာ ဆက်စပ်နာမ်စား" },
+              { chunk: "whom", role: "[Relative Pronoun: Object]", glossMy: "ကံနေရာ ဆက်စပ်နာမ်စား" },
               { chunk: "she", role: "[Subject]", glossMy: "သူမ" },
               { chunk: "works", role: "[Verb]", glossMy: "အလုပ်လုပ်သည်" },
+              { chunk: "is", role: "[Main Linking Verb]", glossMy: "ဖြစ်သည် — အဓိကဝါကျ၏ ဆက်စပ်ကြိယာ" },
+              { chunk: "very friendly", role: "[Complement]", glossMy: "အလွန် ရင်းနှီးသည် — ဖြည့်စွက်ပုဒ်" },
             ],
           },
         ],
@@ -122,7 +128,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
           + "ဒါ့အပြင် ယနေ့ခေတ် စကားပြောထဲမှာတော့ လူတော်တော်များများက whom ကို သုံးဖို့ မေ့ကုန်ပြီး who နဲ့ပဲ ပြောလေ့ ရှိကြပါတယ်။ ဒါပေမယ့် စာရေးတဲ့အခါ၊ အထူးသဖြင့် စာမေးပွဲမှာတော့ who နဲ့ whom ကို မှန်ကန်စွာ ခွဲခြား သိထားဖို့ လိုအပ်ပါတယ်။ ကျောင်းသားတွေ မှန်ခဲစရာ တစ်ခုက whom သုံးရမယ့်နေရာမှာ ကိုယ်စားပြု စကားလုံး him ဒါမှမဟုတ် her ကို ထပ်ထည့်တတ်ကြတာပါ — ဒါက မှားပါတယ်၊ whom ကိုယ်တိုင်ကပဲ ကံ အဖြစ် ကိုယ်စားပြု ပြီးသားမို့ ထပ်ထည့်စရာ မလိုပါဘူး။",
         note: {
           ideaMy: "who = ကတ္တားနေရာ (he/she စမ်းသပ်)၊ whom = ကံနေရာ (him/her စမ်းသပ်)၊ preposition နောက်တွင် whom သာ",
-          formula: "[Noun] + who + [Verb]... / [Noun] + whom + [Subject] + [Verb]...",
+          formula: "[Noun] + who + [Verb] + [Rest]",
           examples: [
             { en: "The man who called me is my uncle.", my: "ဖုန်းခေါ်ခဲ့သော ယောက်ျားသည် ကျွန်တော့်ဦးလေး ဖြစ်ပါသည်။" },
             { en: "The man whom I met yesterday is my uncle.", my: "မနေ့က ကျွန်တော် တွေ့ခဲ့သော ယောက်ျားသည် ကျွန်တော့်ဦးလေး ဖြစ်ပါသည်။" },
@@ -208,9 +214,11 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleMy: "အနီရောင် အိတ်ပိုင်ရှင် ကလေးသည် ကျွန်တော့်ညီ ဖြစ်ပါသည်။",
             parts: [
               { chunk: "The boy", role: "[Noun]", glossMy: "ကလေးသည် — ရှင်းပြခံရမည့် ပိုင်ရှင်" },
-              { chunk: "whose", role: "whose", glossMy: "ပိုင်ဆိုင်မှု ပြသော ဆက်စပ်နာမ်စား" },
+              { chunk: "whose", role: "[Relative Possessive]", glossMy: "ပိုင်ဆိုင်မှု ပြသော ဆက်စပ်နာမ်စား" },
               { chunk: "bag", role: "[Possessed Noun]", glossMy: "အိတ် — ပိုင်ဆိုင်ခံရသော အရာ" },
-              { chunk: "is red", role: "[Verb] + [Rest]", glossMy: "အနီရောင် ဖြစ်သည်" },
+              { chunk: "is red", role: "[Clause Linking Verb + Complement]", glossMy: "အနီရောင် ဖြစ်သည် — ဆက်စပ်ခန်းအတွင်း" },
+              { chunk: "is", role: "[Main Linking Verb]", glossMy: "ဖြစ်သည် — အဓိကဝါကျ၏ ဆက်စပ်ကြိယာ" },
+              { chunk: "my brother", role: "[Complement]", glossMy: "ကျွန်တော့်ညီ — ဖြည့်စွက်ပုဒ်" },
             ],
           },
           {
@@ -220,9 +228,11 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleMy: "ဆေးပညာ တက်ရောက်နေသော သားရှိသော ကျွန်တော့်ဆရာသည် အလွန် ဂုဏ်ယူပါသည်။",
             parts: [
               { chunk: "My teacher", role: "[Noun]", glossMy: "ကျွန်တော့်ဆရာသည် — သိပြီးသား ပိုင်ရှင်" },
-              { chunk: "whose", role: "whose", glossMy: "ပိုင်ဆိုင်မှု ပြသော ဆက်စပ်နာမ်စား" },
+              { chunk: "whose", role: "[Relative Possessive]", glossMy: "ပိုင်ဆိုင်မှု ပြသော ဆက်စပ်နာမ်စား" },
               { chunk: "son", role: "[Possessed Noun]", glossMy: "သား" },
-              { chunk: "studies medicine", role: "[Verb] + [Rest]", glossMy: "ဆေးပညာ တက်ရောက်သည်" },
+              { chunk: "studies medicine", role: "[Clause Verb + Object]", glossMy: "ဆေးပညာ တက်ရောက်သည် — ဆက်စပ်ခန်းအတွင်း" },
+              { chunk: "is", role: "[Main Linking Verb]", glossMy: "ဖြစ်သည် — အဓိကဝါကျ၏ ဆက်စပ်ကြိယာ" },
+              { chunk: "very proud", role: "[Complement]", glossMy: "အလွန် ဂုဏ်ယူသည် — ဖြည့်စွက်ပုဒ်" },
             ],
           },
           {
@@ -231,7 +241,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleEn: "Who's coming to the party tonight?",
             exampleMy: "ဒီညပါတီကို ဘယ်သူတွေ လာကြမှာလဲ။",
             parts: [
-              { chunk: "Who's", role: "Who is", glossMy: "ဘယ်သူ ... နေသလဲ — apostrophe ပါသော အတိုကောက်၊ whose နှင့် အသံတူသော်လည်း အဓိပ္ပာယ် လုံးဝ ကွဲပြား" },
+              { chunk: "Who's", role: "[Question Word + Linking Verb]", glossMy: "ဘယ်သူ ... နေသလဲ — apostrophe ပါသော အတိုကောက်၊ whose နှင့် အသံတူသော်လည်း အဓိပ္ပာယ် လုံးဝ ကွဲပြား" },
               { chunk: "coming", role: "[Verb]", glossMy: "လာနေသည်" },
               { chunk: "to the party tonight", role: "[Rest]", glossMy: "ဒီညပါတီကို" },
             ],
@@ -248,7 +258,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
           + "အလွယ်ဆုံး စမ်းသပ်နည်းလေးက clause ကို ဖယ်ကြည့်တာပါ။ ဖယ်လိုက်ပြီး ဝါကျရဲ့ အဓိပ္ပာယ် ပျက်သွားရင် ဒါက defining clause ဖြစ်လို့ ကော်မာ မထည့်ရပါဘူး။ ဖယ်လိုက်ပေမယ့် ဝါကျရဲ့ အဓိကအဓိပ္ပာယ် မပျက်ဘူးဆိုရင် ဒါက non-defining clause ဖြစ်လို့ ကော်မာ ရှေ့နောက် ခြားပေးရပါတယ်။ ဒီစည်းမျဉ်းလေးကို မှတ်ထားရင် whose ပါတဲ့ ဝါကျတွေ ရေးရတာ လုံးဝ မခက်တော့ပါဘူးနော်။",
         note: {
           ideaMy: "whose + noun = ပိုင်ဆိုင်မှု (apostrophe မပါ)၊ who's = who is/has (apostrophe ပါ)၊ defining = ကော်မာမပါ၊ non-defining = ကော်မာပါ",
-          formula: "[Noun] + whose + [Possessed Noun] + [Verb]... (ကော်မာ ပါ/မပါ ကို clause အမျိုးအစားက ဆုံးဖြတ်)",
+          formula: "[Noun] + whose + [Possessed Noun] + [Verb] + [Rest]",
           examples: [
             { en: "The boy whose bag is red is my brother.", my: "အနီရောင် အိတ်ပိုင်ရှင် ကလေးသည် ကျွန်တော့်ညီ ဖြစ်ပါသည်။" },
             { en: "My teacher, whose son studies medicine, is very proud.", my: "ဆရာ၏ သားသည် ဆေးပညာ တက်ရောက်နေပြီး ဆရာသည် အလွန် ဂုဏ်ယူပါသည်။" },

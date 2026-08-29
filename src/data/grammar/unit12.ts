@@ -78,6 +78,8 @@ export const UNIT12_GRAMMAR: UnitGrammar = {
             exampleEn: "I bought a laptop that has a very fast processor.",
             exampleMy: "ကျွန်တော်သည် အလွန်မြန်ဆန်သော processor ပါသော laptop တစ်လုံးကို ဝယ်ခဲ့ပါသည်။",
             parts: [
+              { chunk: "I", role: "[Subject]", glossMy: "ကျွန်တော် — ကတ္တား" },
+              { chunk: "bought", role: "[Main Verb]", glossMy: "ဝယ်ခဲ့သည် — အဓိကကြိယာ" },
               { chunk: "a laptop", role: "[Noun]", glossMy: "လက်ပ်တော့ပ် — ရှင်းပြခံရမည့် နာမ်" },
               { chunk: "that", role: "[that/which]", glossMy: "ဆက်စပ်နာမ်စား — Defining Clause ဖြစ်၍ Comma မပါ" },
               { chunk: "has a very fast processor", role: "[Verb/Clause]", glossMy: "အလွန်မြန်ဆန်သော processor ပါသည်" },
@@ -104,7 +106,9 @@ export const UNIT12_GRAMMAR: UnitGrammar = {
               { chunk: "The book", role: "[Noun]", glossMy: "စာအုပ် — ရှင်းပြခံရမည့် နာမ်" },
               { chunk: "(that)", role: "[(that/which)]", glossMy: "ကံ ဖြစ်နေသောကြောင့် ချန်ထားနိုင်သည်" },
               { chunk: "I", role: "[Subject]", glossMy: "ကျွန်တော် — Clause အတွင်း ကတ္တား" },
-              { chunk: "bought", role: "[Verb]", glossMy: "ဝယ်ခဲ့သည်" },
+              { chunk: "bought", role: "[Clause Verb]", glossMy: "ဝယ်ခဲ့သည် — ဆက်စပ်ခန်းအတွင်း ကြိယာ" },
+              { chunk: "is", role: "[Main Linking Verb]", glossMy: "ဖြစ်သည် — အဓိကဝါကျ၏ ဆက်စပ်ကြိယာ" },
+              { chunk: "interesting", role: "[Complement]", glossMy: "စိတ်ဝင်စားဖွယ် ကောင်းသည် — ဖြည့်စွက်ပုဒ်" },
             ],
           },
         ],
@@ -119,7 +123,7 @@ export const UNIT12_GRAMMAR: UnitGrammar = {
           "နောက်တစ်ခု သတိထားရမှာက ဆက်စပ်နာမ်စား သုံးပြီးရင် ထပ်ပြီး it, him, her စတဲ့ နာမ်စားတွေကို Clause ထဲမှာ ထပ်မထည့်ဖို့ပါ။ The laptop which I bought it is very fast ဆိုရင် မှားပါတယ်၊ it ကို ဖျက်ပစ်ရမှာနော်၊ ဘာကြောင့်လဲဆိုတော့ which ကိုယ်တိုင်ကပဲ laptop ကို ကိုယ်စားပြုပြီးသားမို့လို့ပါ။ ဒီလိုပဲ Bagan, that is famous for its pagodas ဆိုတာလည်း မှားပါတယ်၊ Comma ပါနေတဲ့အတွက် that ကို ချက်ချင်း which နဲ့ ပြောင်းရမှာနော်။ ဒီအချက်တွေကို သေချာမှတ်ထားရင် that နဲ့ which ကို ဘယ်တော့မှ မှားတော့မှာ မဟုတ်ပါဘူး။",
         note: {
           ideaMy: "Defining Clause (Comma မပါ) → that/which နှစ်ခုစလုံး သုံးနိုင်သည်။ Non-defining Clause (Comma ပါ) → which သာ သုံးရမည်၊ that မသုံးရ။ Clause ထဲက ကံ ဖြစ်နေလျှင် that/which ကို ဖျက်ချန်ထားနိုင်သည်။",
-          formula: "[Noun] + that/which + [Clause] (Defining) / [Noun] + , which + [Clause] + , (Non-defining)",
+          formula: "[Noun] + that/which + [Verb/Clause] + [Rest]",
           examples: [
             { en: "I bought a laptop that has a very fast processor.", my: "ကျွန်တော်သည် အလွန်မြန်ဆန်သော laptop ကို ဝယ်ခဲ့ပါသည်။" },
             { en: "Bagan, which is famous for its pagodas, attracts many tourists.", my: "ပုဂံသည် ဘုရားပုထိုးများဖြင့် ကျော်ကြားပြီး ခရီးသွားများကို ဆွဲဆောင်ပါသည်။" },
@@ -251,7 +255,7 @@ export const UNIT12_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး သတိပေးချင်တာက as ... as ဒုတိယ အပိုင်းမှာ Pronoun ကို သုံးရင် he, she, I စတဲ့ Subject Pronoun ကို ရေးပုံစံအရ သုံးလေ့ ရှိပေမယ့် အပြောစကားမှာတော့ him, her, me လို Object Pronoun ကိုလည်း တွေ့ရတတ်ပါတယ်နော်။ ဒါကြောင့် ဒီ as ... as ဖွဲ့စည်းပုံ တစ်ခုတည်းနဲ့ ညီမျှမှု၊ ငြင်းသဘော ညီမျှမှု၊ ပမာဏ ညီမျှမှု သုံးမျိုးလုံးကို ဖော်ပြနိုင်တယ်ဆိုတာ မှတ်ထားနိုင်ရင် ဒီသင်ခန်းစာကို လုံးဝ ကျွမ်းကျင်သွားပါလိမ့်မယ်။",
         note: {
           ideaMy: "as + Adjective/Adverb (Base Form) + as → ညီမျှမှု။ not as/so ... as → Negative သာ (so ... as ကို Positive တွင် မသုံးရ)။ as many + Countable + as / as much + Uncountable + as ကို ခွဲသုံးရမည်။",
-          formula: "[Subject] + [Verb] + as + [Adj/Adv] + as + [Noun] / not as/so + [Adj/Adv] + as / as many/much + [Noun] + as",
+          formula: "[Subject] + [Verb] + as + [Adjective/Adverb] + as + [Noun/Pronoun]",
           examples: [
             { en: "This car is not as expensive as that one.", my: "ဒီကားသည် ဟိုကားလောက် ဈေးမကြီးပါ။" },
             { en: "He drinks as much water as I do.", my: "ငါ သောက်သလောက် သူလည်း ရေ သောက်ပါသည်။" },

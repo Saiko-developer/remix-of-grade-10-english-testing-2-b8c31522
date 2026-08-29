@@ -80,7 +80,9 @@ export const UNIT10_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "She", role: "[Subject]", glossMy: "သူမ — ကတ္တား" },
               { chunk: "can", role: "[Verb]", glossMy: "နိုင်သည် — အကူကြိယာ" },
+              { chunk: "not only", role: "[Correlative: not only]", glossMy: "သာမက — ပထမအချက်ကို ဖွင့်ပေးသော စကားစု" },
               { chunk: "sing well", role: "[Part A]", glossMy: "ကောင်းစွာ သီဆိုနိုင်ခြင်း — ပထမ အချက်" },
+              { chunk: "but also", role: "[Correlative: but also]", glossMy: "ထို့အပြင် — ဒုတိယအချက်ကို ဖွင့်ပေးသော စကားစု" },
               { chunk: "dance well", role: "[Part B]", glossMy: "ကောင်းစွာ ကနိုင်ခြင်း — ဒုတိယ အချက်" },
             ],
           },
@@ -90,21 +92,27 @@ export const UNIT10_GRAMMAR: UnitGrammar = {
             exampleEn: "Not only did he win the race, but he also broke the record.",
             exampleMy: "သူသည် ပြေးပွဲကို အနိုင်ရရုံသာမက စံချိန်ကိုပါ ချိုးဖျက်ခဲ့ပါသည်။",
             parts: [
+              { chunk: "Not only", role: "[Correlative: Not only]", glossMy: "သာမက — ဝါကျအစတွင် ထားသဖြင့် Inversion လိုအပ်သည်" },
               { chunk: "did", role: "[Auxiliary]", glossMy: "အကူကြိယာ — Inversion အတွက် ဖန်တီးထည့်ခြင်း" },
               { chunk: "he", role: "[Subject]", glossMy: "သူ — ကတ္တားကို အကူကြိယာနောက်သို့ ရွှေ့ခြင်း" },
               { chunk: "win the race", role: "[Verb...]", glossMy: "ပြေးပွဲ အနိုင်ရခြင်း — base form ကြိယာ" },
+              { chunk: "but", role: "[Correlative: but]", glossMy: "သို့သော် — ဒုတိယအပိုင်းကို ဖွင့်ပေးသည်" },
               { chunk: "he also broke the record", role: "[Rest]", glossMy: "စံချိန် ချိုးဖျက်ခြင်း — ဒုတိယ အချက်" },
             ],
           },
           {
             labelMy: "ပုံစံ ၃ — မေးခွန်းဝါကျနှင့် ဆက်စပ်သော ပုံစံ",
-            formula: "[Wh-word] + not only + [Part A] + but also + [Part B] + ?",
+            formula: "[Wh-word] + [Linking Verb] + [Subject] + not only + [Complement A] + but also + [Complement B] + ?",
             exampleEn: "Why is she not only intelligent but also hard-working?",
             exampleMy: "သူမသည် ဉာဏ်ရည်ထက်မြက်ရုံသာမက ကြိုးစားလုပ်ဆောင်တတ်ခြင်းလည်း ဘာကြောင့် ဖြစ်နေသလဲ။",
             parts: [
               { chunk: "Why", role: "[Wh-word]", glossMy: "ဘာကြောင့် — မေးခွန်းလုံး" },
-              { chunk: "intelligent", role: "[Part A]", glossMy: "ဉာဏ်ရည်ထက်မြက်ခြင်း — ပထမ အချက်" },
-              { chunk: "hard-working", role: "[Part B]", glossMy: "ကြိုးစားလုပ်ဆောင်တတ်ခြင်း — ဒုတိယ အချက်" },
+              { chunk: "is", role: "[Linking Verb]", glossMy: "ဖြစ်သည် — ဆက်စပ်ကြိယာ, နောက်တွင် ဖြည့်စွက်ပုဒ်သာ လာသည်" },
+              { chunk: "she", role: "[Subject]", glossMy: "သူမ — ကတ္တား (မေးခွန်းဖြစ်၍ ကြိယာနောက်သို့ ရွှေ့ထားသည်)" },
+              { chunk: "not only", role: "[Correlative: not only]", glossMy: "သာမက — ပထမ ဖြည့်စွက်ပုဒ်ကို ဖွင့်သည်" },
+              { chunk: "intelligent", role: "[Complement A]", glossMy: "ဉာဏ်ရည်ထက်မြက်ခြင်း — ပထမ ဖြည့်စွက်ပုဒ်" },
+              { chunk: "but also", role: "[Correlative: but also]", glossMy: "ထို့အပြင် — ဒုတိယ ဖြည့်စွက်ပုဒ်ကို ဖွင့်သည်" },
+              { chunk: "hard-working", role: "[Complement B]", glossMy: "ကြိုးစားလုပ်ဆောင်တတ်ခြင်း — ဒုတိယ ဖြည့်စွက်ပုဒ်" },
             ],
           },
         ],
@@ -118,7 +126,7 @@ export const UNIT10_GRAMMAR: UnitGrammar = {
           "ဒါကြောင့် ဒီဖွဲ့စည်းပုံကို သုံးတဲ့အခါ အဆင့်ဆင့် စဉ်းစားပါ — ပထမဆုံး ဝါကျနှစ်ကြောင်းရဲ့ တူညီတဲ့ ကတ္တားနဲ့ အကူကြိယာကို ရှာပါ၊ ပြီးရင် \"not only\" ကို ပထမ အချက်ရှေ့မှာ ထားပါ၊ ပြီးရင် ထပ်နေတဲ့ ကတ္တားကို ဖျက်ပြီး \"but also\" ကို ဒုတိယ အချက်ရှေ့မှာ ထားပါ၊ နောက်ဆုံး Parallel ဖြစ်မဖြစ် ပြန်စစ်ပါ။ ဒါသာ လုပ်တတ်ရင် ဒီသဒ္ဒါက အလွန်လွယ်ကူပါတယ်ဗျာ။",
         note: {
           ideaMy: "\"...တစ်ခုတည်းမက ...လည်း ဖြစ်သေးသည်\" — Parallel Structure နှင့် Inversion (ဝါကျရှေ့ဆုံးတွင် ရှိလျှင်) သတိပြုရန်",
-          formula: "[Subject] + [Verb] + not only + [Part A] + but also + [Part B]  |  Not only + [Aux] + [Subject] + [Verb], but [Subject] also + [Rest]",
+          formula: "[Subject] + [Verb] + not only + [Part A] + but also + [Part B]",
           examples: [
             { en: "She can not only sing but also dance.", my: "သူမသည် သီဆိုရုံသာမက ကလည်း ကနိုင်ပါသည်။" },
             { en: "Not only is he rich, but he is also kind.", my: "သူသည် ချမ်းသာရုံသာမက စိတ်ကောင်းလည်း ရှိပါသည်။" },
@@ -246,7 +254,7 @@ export const UNIT10_GRAMMAR: UnitGrammar = {
           "မှားတတ်တဲ့ နေရာလေးတွေကိုလည်း ပြောပြချင်တယ်နော်။ တချို့ကျောင်းသားတွေက \"the\" ကို မေ့ကျန်ခဲ့တတ်တယ်၊ \"More you sleep, more tired you feel\" ဆိုပြီး ရေးမိတတ်တယ်၊ ဒါဟာ လုံးဝ မှားတာပါ၊ \"the\" ကို နှစ်ခါစလုံး ထည့်ပေးရမယ်။ နောက်တစ်ခုက adjective တစ်လုံးတည်းအတွက် \"-er\" နဲ့ \"more\" ကို တွဲမသုံးရဘူးနော်၊ \"happy\" ဆိုရင် \"happier\" လို့ပဲ ရေးရမယ်၊ \"more happier\" လို့ ရေးလို့ မရဘူး။ ဒီအချက်တွေကို သတိထားလိုက်ရင် ဒီသဒ္ဒါက အလွန်လွယ်ကူသွားပါလိမ့်မယ်ဗျာ။",
         note: {
           ideaMy: "\"ပိုမို ...လေ ပိုမို ...လေ\" — ခွက်နှစ်ခုစလုံး \"the\" ဖြင့် စရမည်၊ ကြားတွင် ကော်မာ ဖြစ်မဖြစ် ခံရမည်",
-          formula: "The + comparative + [Subject] + [Verb], the + comparative + [Subject] + [Verb]",
+          formula: "The + [Adjective]-er + [Subject 1] + [Verb 1] + , + the + [Adjective]-er + [Subject 2] + [Verb 2]",
           examples: [
             { en: "The harder you work, the more you earn.", my: "ပိုပြီး ကြိုးစားလေ ပိုပြီး ဝင်ငွေရလေ ဖြစ်ပါသည်။" },
             { en: "The more, the merrier.", my: "လူများလေ ပျော်ရွှင်လေ ဖြစ်ပါသည်။" },

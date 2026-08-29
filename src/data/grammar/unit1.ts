@@ -140,7 +140,7 @@ export const UNIT1_GRAMMAR: UnitGrammar = {
           "ကိုယ့်အလုပ်ကို ကိုယ်တိုင် စစ်ချင်ရင် နည်းလမ်း တစ်ခု ရှိတယ်။ ကော်မာ နှစ်လုံးကြားထဲက စာကို လက်နဲ့ ဖုံးပြီး ကျန်တဲ့ ဝါကျကို ဖတ်ကြည့်ပါ။ အဲဒီဝါကျက သူ့ဟာသူ ပြည့်စုံနေရင် သင် မှန်နေပါပြီ။ တော်တယ်နော် ကျောင်းသား၊ ဒီလောက်ဆို ရပါပြီ။",
         note: {
           ideaMy: "နာမ်တစ်လုံးကို ရှင်းပြဖို့ သူ့ဘေးမှာ ကော်မာခံပြီး ကပ်ထားတဲ့ နာမ်စု။",
-          formula: "[Noun] + , + [Appositive Noun Phrase] + , + [Verb] + [Rest]",
+          formula: "[Subject Noun] + , + [Appositive Noun Phrase] + , + [Verb] + [Rest]",
           examples: [
             {
               en: "Bagan, an ancient capital of Myanmar, has many pagodas.",
@@ -256,7 +256,7 @@ export const UNIT1_GRAMMAR: UnitGrammar = {
           "ဒီတော့ စမ်းသပ်နည်း တစ်ခု မှတ်ထားပါ — ရှင်းလင်းစုကို ဖုံးပြီး ဖတ်ကြည့်ပါ။ ဘယ်သူ့ကို ပြောနေမှန်း သေချာနေသေးရင် ကော်မာ ခံ။ မသေချာတော့ရင် ကော်မာ မခံနဲ့။ ဒီတစ်ခုပဲ မှတ်ထားရင် အားလုံး မှန်သွားပါလိမ့်မယ်။ တော်တယ်နော်။",
         note: {
           ideaMy: "ဖယ်လို့ရရင် ကော်မာ ခံ၊ ဖယ်လို့ မရရင် ကော်မာ မခံ။",
-          formula: "အပို → [Noun] , [Info] , [Verb] ။ မဖြစ်မနေလို → [Noun] [Name] [Verb]",
+          formula: "[Specific Noun] + , + [Extra Information] + , + [Verb] + [Rest]",
           examples: [
             { en: "My mother, a nurse, works at night.", my: "သူနာပြုဖြစ်သော ကျွန်တော့်အမေ ညဘက် အလုပ်လုပ်သည်။" },
             { en: "My friend Ko Ko is here.", my: "ကျွန်တော့်သူငယ်ချင်း ကိုကို ဤနေရာတွင် ရှိသည်။" },

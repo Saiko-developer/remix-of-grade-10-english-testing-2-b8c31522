@@ -85,8 +85,8 @@ export const UNIT6_GRAMMAR: UnitGrammar = {
             exampleMy: "မြသည် သူမ ပင်ပန်းနေကြောင်း ပြောခဲ့ပါသည်။",
             parts: [
               { chunk: "Mya", role: "[Subject]", glossMy: "မြ — ပြောသူ ကတ္တား" },
-              { chunk: "said", role: "reporting verb", glossMy: "ပြောသည် — past tense reporting verb" },
-              { chunk: "that", role: "conjunction", glossMy: "ဟု၊ ကြောင်း — ဆက်ကြောင်း" },
+              { chunk: "said", role: "[Reporting Verb]", glossMy: "ပြောသည် — past tense reporting verb" },
+              { chunk: "that", role: "[Conjunction]", glossMy: "ဟု၊ ကြောင်း — ဆက်ကြောင်း" },
               { chunk: "she", role: "[New Subject]", glossMy: "သူမ — pronoun ပြောင်းလဲထားခြင်း" },
               { chunk: "was", role: "[Backshifted Verb]", glossMy: "ဖြစ်ခဲ့သည် — tense တစ်ဆင့် နောက်ကျထားခြင်း" },
               { chunk: "tired", role: "[Rest]", glossMy: "ပင်ပန်းသော" },
@@ -99,8 +99,8 @@ export const UNIT6_GRAMMAR: UnitGrammar = {
             exampleMy: "ကိုကိုက သူသည် ကော်ဖီကို မကြိုက်ကြောင်း ကျွန်တော့်ကို ပြောခဲ့ပါသည်။",
             parts: [
               { chunk: "Ko Ko", role: "[Subject]", glossMy: "ကိုကို — ပြောသူ" },
-              { chunk: "told me", role: "reporting verb + object", glossMy: "ကျွန်တော့်ကို ပြောသည် — told ပြီးနောက် object တိုက်ရိုက်ဆက်ခြင်း" },
-              { chunk: "that", role: "conjunction", glossMy: "ဟု၊ ကြောင်း" },
+              { chunk: "told me", role: "[Reporting Verb + Object]", glossMy: "ကျွန်တော့်ကို ပြောသည် — told ပြီးနောက် object တိုက်ရိုက်ဆက်ခြင်း" },
+              { chunk: "that", role: "[Conjunction]", glossMy: "ဟု၊ ကြောင်း" },
               { chunk: "he", role: "[New Subject]", glossMy: "သူ — pronoun ပြောင်းလဲထားခြင်း" },
               { chunk: "did not like", role: "[Backshifted Verb + not]", glossMy: "မကြိုက်ခဲ့ — past negative backshift" },
               { chunk: "coffee", role: "[Rest]", glossMy: "ကော်ဖီ" },
@@ -113,8 +113,8 @@ export const UNIT6_GRAMMAR: UnitGrammar = {
             exampleMy: "သူသည် ကျွန်တော်တို့ကို နောက်တစ်နေ့ လာလည်မည်ဟု ပြောခဲ့ပါသည်။",
             parts: [
               { chunk: "He", role: "[Subject]", glossMy: "သူ — ပြောသူ" },
-              { chunk: "said", role: "reporting verb", glossMy: "ပြောသည်" },
-              { chunk: "that", role: "conjunction", glossMy: "ဟု၊ ကြောင်း" },
+              { chunk: "said", role: "[Reporting Verb]", glossMy: "ပြောသည်" },
+              { chunk: "that", role: "[Conjunction]", glossMy: "ဟု၊ ကြောင်း" },
               { chunk: "he", role: "[New Subject]", glossMy: "သူ" },
               { chunk: "would visit", role: "[Backshifted Verb]", glossMy: "will → would ပြောင်းထားခြင်း" },
               { chunk: "us", role: "[Rest]", glossMy: "ကျွန်တော်တို့ကို" },
@@ -232,7 +232,7 @@ export const UNIT6_GRAMMAR: UnitGrammar = {
             exampleMy: "သူသည် ကျွန်တော် ဘာလိုချင်သလဲဟု မေးခဲ့ပါသည်။",
             parts: [
               { chunk: "He", role: "[Subject]", glossMy: "သူ — မေးသူ" },
-              { chunk: "asked me", role: "reporting verb + object", glossMy: "ကျွန်တော့်ကို မေးခဲ့သည်" },
+              { chunk: "asked me", role: "[Reporting Verb + Object]", glossMy: "ကျွန်တော့်ကို မေးခဲ့သည်" },
               { chunk: "what", role: "[wh-word]", glossMy: "ဘာ — wh-word ကို ဆက်ထားခြင်း" },
               { chunk: "I", role: "[New Subject]", glossMy: "ကျွန်တော် — pronoun ပြောင်းလဲထားခြင်း" },
               { chunk: "wanted", role: "[Backshifted Verb]", glossMy: "want → wanted backshift" },
@@ -245,8 +245,8 @@ export const UNIT6_GRAMMAR: UnitGrammar = {
             exampleMy: "သူမသည် ကျွန်တော် ဆာလောင်မှုရှိမရှိ မေးခဲ့ပါသည်။",
             parts: [
               { chunk: "She", role: "[Subject]", glossMy: "သူမ — မေးသူ" },
-              { chunk: "asked me", role: "reporting verb + object", glossMy: "ကျွန်တော့်ကို မေးခဲ့သည်" },
-              { chunk: "if", role: "if/whether", glossMy: "ရှိမရှိ — wh-word အစား သုံးသော conjunction" },
+              { chunk: "asked me", role: "[Reporting Verb + Object]", glossMy: "ကျွန်တော့်ကို မေးခဲ့သည်" },
+              { chunk: "if", role: "[Reported Question Marker]", glossMy: "ရှိမရှိ — wh-word အစား သုံးသော conjunction" },
               { chunk: "I", role: "[New Subject]", glossMy: "ကျွန်တော်" },
               { chunk: "was", role: "[Backshifted Verb]", glossMy: "am → was backshift" },
               { chunk: "hungry", role: "[Rest]", glossMy: "ဆာလောင်သော" },
@@ -259,10 +259,10 @@ export const UNIT6_GRAMMAR: UnitGrammar = {
             exampleMy: "ဆရာသည် ကျောင်းသားများကို စာမေးပွဲအတွင်း စကားမပြောရန် ညွှန်ကြားခဲ့ပါသည်။",
             parts: [
               { chunk: "The teacher", role: "[Subject]", glossMy: "ဆရာ — အမိန့်ပေးသူ" },
-              { chunk: "told", role: "reporting verb", glossMy: "ညွှန်ကြားသည်" },
+              { chunk: "told", role: "[Reporting Verb]", glossMy: "ညွှန်ကြားသည်" },
               { chunk: "the students", role: "[object]", glossMy: "ကျောင်းသားများ — အမိန့်ခံရသူ" },
-              { chunk: "not", role: "(not)", glossMy: "negative command ဖြစ်ကြောင်း ပြသည်" },
-              { chunk: "to talk", role: "to + [Base Verb]", glossMy: "စကားပြောခြင်း — infinitive ပုံစံ" },
+              { chunk: "not", role: "[Negative Marker]", glossMy: "negative command ဖြစ်ကြောင်း ပြသည်" },
+              { chunk: "to talk", role: "[Infinitive Phrase]", glossMy: "စကားပြောခြင်း — infinitive ပုံစံ" },
               { chunk: "during the exam", role: "[Rest]", glossMy: "စာမေးပွဲအတွင်း" },
             ],
           },
@@ -279,7 +279,7 @@ export const UNIT6_GRAMMAR: UnitGrammar = {
         note: {
           ideaMy:
             "wh-question → wh-word ဆက်ထား + ဝါကျအစီအစဉ် ပုံမှန်ပြန်ထား + question mark ဖျက်။ yes/no question → if/whether ထည့် + auxiliary verb ဖျက်။ Command → to+verb, Negative Command → not to+verb",
-          formula: "[Subject] + asked/told (+ object) + [wh-word / if / whether / (not) to] + [Rest]",
+          formula: "[Subject] + asked (+ object) + [wh-word] + [New Subject] + [Backshifted Verb] + [Rest]",
           examples: [
             { en: "\"Where do you live?\" → She asked me where I lived.", my: "wh-question ပြောင်းလဲပုံ" },
             { en: "\"Are you tired?\" → He asked me if I was tired.", my: "yes/no question ပြောင်းလဲပုံ" },

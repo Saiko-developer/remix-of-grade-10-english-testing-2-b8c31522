@@ -120,7 +120,7 @@ export const UNIT2_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး သတိထားရမယ့် အချက်တွေကို ပြန်ချုပ်ပေးမယ်။ တစ် — ဝိသေသနစုက ရှင်းပြမယ့် နာမ်ရဲ့ နောက်မှာပဲ ရောက်ရမယ်၊ ရှေ့မှာ လုံးဝ မထားရဘူး။ နှစ် — နာမ်က ကိုယ်တိုင်လုပ်နေရင် V-ing၊ ခံနေရရင် V3 ကို သုံးရမယ်။ သုံး — ကြိယာက အဓိကနာမ်နဲ့ပဲ ကိုက်ရမယ်၊ ဝိသေသနစုအတွင်းက နာမ်နဲ့ မကိုက်ရဘူး။ ဒီလောက်ဆို ရပါပြီ ကျောင်းသား၊ တော်တယ်နော်။",
         note: {
           ideaMy: "နာမ်တစ်လုံးကို ရှင်းပြရန် ၎င်း၏ နောက်တွင် ကော်မာမပါဘဲ ထည့်ထားသော စကားလုံးအစု — ဝိဘတ်၊ V-ing၊ V3 ဖြင့် စတင်နိုင်သည်။",
-          formula: "[Noun] + [Preposition / Verb-ing / Verb-3] + [Rest of Phrase]",
+          formula: "[Noun] + [Preposition] + [Noun Phrase] + [Rest of Sentence]",
           examples: [
             {
               en: "The girl in the green shirt is my classmate.",
@@ -205,36 +205,34 @@ export const UNIT2_GRAMMAR: UnitGrammar = {
         ],
         formulas: [
           {
-            labelMy: "ပုံစံ ၁ — Present Simple (အပြုသဘော / ငြင်းဆိုချက် / မေးခွန်း)",
-            formula: "[Subject] + [Verb (+s/es)] + [Rest] | [Subject] + do/does + not + [Verb] + [Rest] | Do/Does + [Subject] + [Verb] + [Rest] ?",
-            exampleEn: "She watches TV every evening. / She does not watch TV every evening. / Does she watch TV every evening?",
-            exampleMy: "သူမသည် ညနေတိုင်း တီဗီကြည့်ပါသည်။ / သူမသည် ညနေတိုင်း တီဗီ မကြည့်ပါ။ / သူမသည် ညနေတိုင်း တီဗီကြည့်ပါသလား။",
+            labelMy: "ပုံစံ ၁ — Present Simple (အပြုသဘော)",
+            formula: "[Subject] + [Verb (+s/es)] + [Object] + [Rest]",
+            exampleEn: "She watches TV every evening.",
+            exampleMy: "သူမသည် ညနေတိုင်း တီဗီ ကြည့်ပါသည်။",
             parts: [
               { chunk: "She", role: "[Subject]", glossMy: "သူမ — he/she/it အုပ်စု ကတ္တား" },
               { chunk: "watches", role: "[Verb (+s/es)]", glossMy: "ကြည့်သည် — es ထည့်ထားသော ကြိယာ" },
-              { chunk: "does not watch", role: "do/does + not + [Verb]", glossMy: "မကြည့်ပါ — ငြင်းဆိုချက်ပုံစံ" },
-              { chunk: "Does she watch", role: "Do/Does + [Subject] + [Verb]", glossMy: "ကြည့်ပါသလား — မေးခွန်းပုံစံ" },
+              { chunk: "TV", role: "[Object]", glossMy: "တီဗီကို — ကံ" },
               { chunk: "every evening", role: "[Rest]", glossMy: "ညနေတိုင်း — signal word ပါသော အချိန်" },
             ],
           },
           {
-            labelMy: "ပုံစံ ၂ — Present Continuous (အပြုသဘော / ငြင်းဆိုချက် / မေးခွန်း)",
-            formula: "[Subject] + am/is/are + [Verb-ing] + [Rest] | [Subject] + am/is/are + not + [Verb-ing] + [Rest] | Am/Is/Are + [Subject] + [Verb-ing] + [Rest] ?",
-            exampleEn: "He is watching TV now. / He is not watching TV now. / Is he watching TV now?",
-            exampleMy: "သူသည် ယခု တီဗီကြည့်နေသည်။ / သူသည် ယခု တီဗီ မကြည့်နေပါ။ / သူသည် ယခု တီဗီကြည့်နေပါသလား။",
+            labelMy: "ပုံစံ ၂ — Present Continuous (အပြုသဘော)",
+            formula: "[Subject] + am/is/are + [Verb-ing] + [Object] + [Rest]",
+            exampleEn: "He is watching TV now.",
+            exampleMy: "သူသည် ယခု တီဗီ ကြည့်နေပါသည်။",
             parts: [
               { chunk: "He", role: "[Subject]", glossMy: "သူ — ကတ္တား" },
-              { chunk: "is", role: "am/is/are", glossMy: "ဖြစ်သည် — ကတ္တားနှင့်ကိုက်သော be ကြိယာ" },
+              { chunk: "is", role: "[Linking Verb]", glossMy: "ဖြစ်သည် — ကတ္တားနှင့်ကိုက်သော be ကြိယာ" },
               { chunk: "watching", role: "[Verb-ing]", glossMy: "ကြည့်နေသော — ing ထည့်ထားသော ကြိယာ" },
-              { chunk: "is not watching", role: "am/is/are + not + [Verb-ing]", glossMy: "မကြည့်နေပါ — ငြင်းဆိုချက်ပုံစံ" },
-              { chunk: "Is he watching", role: "Am/Is/Are + [Subject] + [Verb-ing]", glossMy: "ကြည့်နေပါသလား — မေးခွန်းပုံစံ" },
+              { chunk: "TV", role: "[Object]", glossMy: "တီဗီကို — ကံ" },
               { chunk: "now", role: "[Rest]", glossMy: "ယခု — signal word" },
             ],
           },
           {
             labelMy: "ပုံစံ ၃ — Stative Verbs (Continuous မယူနိုင်သော ကြိယာများ)",
             formula: "[Subject] + [Stative Verb] + [Object] (V-ing ထည့်၍ မရ)",
-            exampleEn: "I like this song. (NOT: I am liking this song.)",
+            exampleEn: "I like this song.",
             exampleMy: "ကျွန်တော် ဤသီချင်းကို ကြိုက်ပါသည်။",
             parts: [
               { chunk: "I", role: "[Subject]", glossMy: "ကျွန်တော် — ကတ္တား" },
@@ -254,7 +252,7 @@ export const UNIT2_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး ကျောင်းသားတွေ အများဆုံး မှားတတ်တဲ့ အချက်ကို ပြောပြရမယ်နော် — stative verbs ဆိုတဲ့ ကြိယာအုပ်စု ရှိတယ်။ like, want, know, believe, love, hate, own, need, understand ဆိုတဲ့ ကြိယာတွေက အခြေအနေကိုသာ ဖော်ပြတာမို့ ing လုံးဝ မထည့်ရဘူးနော်။ \"I am liking this song\" လို့ ရေးလို့ လုံးဝ မရဘူး၊ \"I like this song.\" လို့ပဲ အမြဲ ရေးရမှာပါ။ ဒီစကားလုံးတွေကို အလွတ်ကျက်ထားပြီး ing နဲ့ လုံးဝ မတွဲနဲ့လို့ မှတ်ထားပါ။ ဒီလောက်ဆို ရပါပြီ ကျောင်းသား၊ တော်တယ်နော်၊ အိမ်စာ ကျင့်ကြည့်ပါဦးနော်။",
         note: {
           ideaMy: "အလေ့အကျင့်/အမြဲမှန်သောအချက် = Present Simple (V+s/es)။ ယခုဖြစ်နေဆဲ = Present Continuous (am/is/are + V-ing)။ stative verbs တွင် ing လုံးဝ မထည့်ရ။",
-          formula: "Simple: [Subject]+[V(+s/es)] | Continuous: [Subject]+am/is/are+[V-ing]",
+          formula: "[Subject] + [Verb (+s/es)] + [Object] + [Rest]",
           examples: [
             {
               en: "She usually watches TV, but right now she is reading a book.",

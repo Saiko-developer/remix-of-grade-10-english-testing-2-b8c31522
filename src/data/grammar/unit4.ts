@@ -120,7 +120,7 @@ export const UNIT4_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံးအနေနဲ့ ဒီ Grammar ကို ဘာကြောင့် သုံးရလဲဆိုတော့ ဝါကျနှစ်ကြောင်းကို တစ်ကြောင်းတည်း ပေါင်းလို့ ရလွယ်ကူသလို ဖတ်ရလည်း ချောမွေ့တဲ့ အတွက်ပါ။ စာမေးပွဲမှာလည်း ဝါကျ ပေါင်းစပ်ခိုင်းရင် ဒီနည်းက အသုံးဝင်ပါတယ်နော်။ ဆက်ပြီးတော့ Quiz လေးကို လုပ်ကြည့်ကြရအောင်ဗျာ။",
         note: {
           ideaMy: "Participial Phrase = ကြိယာမှ ပြောင်းလာသော -ing (active) သို့မဟုတ် -ed/irregular (passive) ဖြင့် ကတ္တားကို ရှင်းပြသော စကားစု",
-          formula: "[Verb-ing/Verb-ed + Rest] + , + [Subject] + [Verb] + [Rest]",
+          formula: "[Verb-ing + Rest] + , + [Subject] + [Main Verb] + [Rest]",
           examples: [
             { en: "Feeling tired, he went to bed early.", my: "ပင်ပန်းနေသောကြောင့် သူသည် အိပ်ရာစောစောဝင်ခဲ့သည်။" },
             { en: "Broken by the storm, the tree fell down.", my: "မုန်တိုင်းက ချိုးဖျက်ခံရသောကြောင့် သစ်ပင် ပြိုကျသွားသည်။" },
@@ -245,7 +245,7 @@ export const UNIT4_GRAMMAR: UnitGrammar = {
           "Negative နဲ့ Question ပုံစံလေးတွေကို ထပ်ပြောပေးရရင် Past Simple Negative က \"did not\" (didn't) ပေါင်းကြိယာအခြေခံပုံစံ ပါပဲ၊ ကြိယာကို ဘယ်တော့မှ Past Simple ပြန်ပြောင်း ထားလို့ မရဘူးနော်။ Past Simple Question ကတော့ \"Did + Subject + ကြိယာအခြေခံပုံစံ...?\" ပါ။ Past Continuous ဘက်မှာတော့ Negative က \"was/were not\" ပေါင်း ကြိယာ-ing၊ Question ကတော့ \"Was/Were + Subject + ကြိယာ-ing...?\" ပါ။ ဒီနှစ်ခု ကို မရောရအောင် အသေအချာ ခွဲမှတ်ထားပါနော်။ ဆက်ပြီးတော့ Quiz လေး ကြည့်ကြရအောင်ဗျာ။",
         note: {
           ideaMy: "Past Simple = ပြီးပြီးသား ပြတ်သားသော လုပ်ရပ် (Verb-ed/Irregular) | Past Continuous = ကြာမြင့်စွာ ဆက်ဖြစ်နေဆဲ လုပ်ရပ် (was/were + Verb-ing)",
-          formula: "[Subject] + was/were + Verb-ing + when + [Subject] + Verb-ed/Irregular",
+          formula: "[Subject] + [Verb-ed / Irregular Past] + [Rest] | [Subject] + did not + [Base Verb] + [Rest] | Did + [Subject] + [Base Verb] + [Rest] + ?",
           examples: [
             { en: "I was reading when the lights went out.", my: "မီးပျက်တဲ့အချိန်မှာ ကျွန်တော် စာဖတ်နေခဲ့သည်။" },
             { en: "She did not call me yesterday.", my: "မနေ့က သူမ ကျွန်တော့်ကို ဖုန်း ဆက်ခြင်း မရှိခဲ့ပါ။" },

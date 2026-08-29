@@ -93,8 +93,9 @@ export const UNIT3_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "Tom", role: "[Subject 1]", glossMy: "တွမ် — ကတ္တားပထမပုဂ္ဂိုလ်" },
               { chunk: "Jerry", role: "[Subject 2]", glossMy: "ဂျယ်ရီ — ကတ္တားဒုတိယပုဂ္ဂိုလ်" },
-              { chunk: "are", role: "[Plural Verb]", glossMy: "ဖြစ်ကြသည် — အများကိန်းကြိယာ" },
-              { chunk: "friends", role: "[Rest]", glossMy: "သူငယ်ချင်းများ" },
+              { chunk: "and", role: "[Coordinator: and]", glossMy: "နှင့် — ကတ္တားနှစ်ခုကို ချိတ်ဆက်သော စကားလုံး" },
+              { chunk: "are", role: "[Plural Linking Verb]", glossMy: "ဖြစ်ကြသည် — အများကိန်း ဆက်စပ်ကြိယာ" },
+              { chunk: "friends", role: "[Complement]", glossMy: "သူငယ်ချင်းများ — ဆက်စပ်ကြိယာ၏ နောက်ရှိ ဖြည့်စွက်ပုဒ်" },
             ],
           },
           {
@@ -103,7 +104,7 @@ export const UNIT3_GRAMMAR: UnitGrammar = {
             exampleEn: "There are many students in the classroom.",
             exampleMy: "စာသင်ခန်းထဲတွင် ကျောင်းသား အများအပြား ရှိသည်။",
             parts: [
-              { chunk: "There", role: "there", glossMy: "ကတ္တား မဟုတ်ပါ — နေရာဖြည့်စကားလုံးသာ" },
+              { chunk: "There", role: "[Dummy Subject]", glossMy: "ကတ္တား မဟုတ်ပါ — နေရာဖြည့်စကားလုံးသာ" },
               { chunk: "are", role: "[is/are]", glossMy: "ရှိသည် — အစစ်အမှန် ကတ္တားနှင့် ကိုက်ညီရမည်" },
               { chunk: "many students", role: "[True Subject]", glossMy: "ကျောင်းသားအများအပြား — အစစ်အမှန် ကတ္တား" },
               { chunk: "in the classroom", role: "[Rest]", glossMy: "စာသင်ခန်းထဲတွင်" },
@@ -206,9 +207,9 @@ export const UNIT3_GRAMMAR: UnitGrammar = {
             exampleEn: "Either Tom or his brother is coming.",
             exampleMy: "တွမ် သို့မဟုတ် သူ့ညီအစ်ကို တစ်ဦးဦးသည် လာမည် ဖြစ်သည်။",
             parts: [
-              { chunk: "Either", role: "Either", glossMy: "ဖော်ပြသူ — ရွေးချယ်စရာ ရှိကြောင်း ညွှန်ပြသည်" },
+              { chunk: "Either", role: "[Correlative: Either]", glossMy: "ဖော်ပြသူ — ရွေးချယ်စရာ ရှိကြောင်း ညွှန်ပြသည်" },
               { chunk: "Tom", role: "[Subject 1]", glossMy: "တွမ် — ပထမရွေးချယ်စရာ" },
-              { chunk: "or", role: "or", glossMy: "သို့မဟုတ် — either နှင့် တွဲသုံးရသော စကားလုံး" },
+              { chunk: "or", role: "[Correlative: or]", glossMy: "သို့မဟုတ် — either နှင့် တွဲသုံးရသော စကားလုံး" },
               { chunk: "his brother", role: "[Subject 2 (nearest)]", glossMy: "သူ့ညီအစ်ကို — ကြိယာနှင့် အနီးဆုံးကတ္တား" },
               { chunk: "is coming", role: "[Verb agreeing with Subject 2]", glossMy: "လာနေသည် — Subject 2 နှင့်ကိုက်ညီသော အနည်းကိန်းကြိယာ" },
             ],
@@ -219,9 +220,9 @@ export const UNIT3_GRAMMAR: UnitGrammar = {
             exampleEn: "Neither my mother nor my father is free today.",
             exampleMy: "မိခင်နှင့် ဖခင် နှစ်ဦးစလုံးသည် ယနေ့ အားမလပ်ကြပါ။",
             parts: [
-              { chunk: "Neither", role: "Neither", glossMy: "မည်သည့်တစ်ခုမျှ မဟုတ် — ကိုယ်တိုင် အနှုတ်အနက်ပါ" },
+              { chunk: "Neither", role: "[Correlative: Neither]", glossMy: "မည်သည့်တစ်ခုမျှ မဟုတ် — ကိုယ်တိုင် အနှုတ်အနက်ပါ" },
               { chunk: "my mother", role: "[Subject 1]", glossMy: "မိခင် — ပထမကတ္တား" },
-              { chunk: "nor", role: "nor", glossMy: "လည်းကောင်း...မဟုတ် — neither နှင့် တွဲသုံးရသော စကားလုံး" },
+              { chunk: "nor", role: "[Correlative: nor]", glossMy: "လည်းကောင်း...မဟုတ် — neither နှင့် တွဲသုံးရသော စကားလုံး" },
               { chunk: "my father", role: "[Subject 2 (nearest)]", glossMy: "ဖခင် — ကြိယာနှင့် အနီးဆုံးကတ္တား" },
               { chunk: "is free today", role: "[Positive Verb agreeing with Subject 2]", glossMy: "ယနေ့ အားလပ်သည် — အပြုသဘောကြိယာ၊ not မပါရ" },
             ],
@@ -233,7 +234,7 @@ export const UNIT3_GRAMMAR: UnitGrammar = {
             exampleMy: "အဖြေနှစ်ခုစလုံးထဲမှ တစ်ခုမျှ မမှန်ကန်ပါ။",
             parts: [
               { chunk: "Neither", role: "[Neither/Either]", glossMy: "မည်သည့်တစ်ခုမျှ — နာမ်စားအဖြစ် တစ်ကိုယ်တည်း ရပ်နေသည်" },
-              { chunk: "of the answers", role: "of + [Plural Noun]", glossMy: "အဖြေများထဲမှ — ရှင်းလင်းချက်စကားစု" },
+              { chunk: "of the answers", role: "[of + Plural Noun]", glossMy: "အဖြေများထဲမှ — ရှင်းလင်းချက်စကားစု" },
               { chunk: "is correct", role: "[Singular Verb]", glossMy: "မှန်ကန်သည် — အမြဲ အနည်းကိန်းကြိယာ သုံးရသည်" },
             ],
           },
@@ -250,7 +251,7 @@ export const UNIT3_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံးအနေနဲ့ \"either\" ဒါမှမဟုတ် \"neither\" ကို တစ်လုံးတည်း နာမ်စားအနေနဲ့လည်း သုံးလို့ရတယ်ဆိုတာ မှတ်ထားပေးပါ။ \"Neither is correct.\" ဆိုရင် \"နှစ်ခုစလုံး မမှန်ဘူး\" လို့ အဓိပ္ပာယ်ရပြီး ဒီလိုအခါမှာ ကြိယာကို အမြဲ အနည်းကိန်း သုံးရပါတယ်။ ကောင်းပြီဗျာ၊ ဒီသင်ခန်းစာလေးကို ကောင်းကောင်း နားလည်ပြီလို့ ယုံကြည်ပါတယ်၊ ဆက်လက်ပြီး လေ့ကျင့်ခန်း လုပ်ကြည့်ရအောင်နော်။",
         note: {
           ideaMy: "either...or = နှစ်ခုအနက် တစ်ခု (အပြု) | neither...nor = နှစ်ခုစလုံး မဟုတ် (အနှုတ်) | ကြိယာက အနီးဆုံးကတ္တားနဲ့သာ ကိုက်ရမည်",
-          formula: "Neither + [Subject 1] + nor + [Subject 2] + [Verb agreeing with Subject 2]",
+          formula: "Either + [Subject 1] + or + [Subject 2 (nearest)] + [Verb agreeing with Subject 2] + [Rest]",
           examples: [
             { en: "Either Tom or his brother is coming.", my: "တွမ် သို့မဟုတ် သူ့ညီအစ်ကို တစ်ဦးဦးသည် လာမည် ဖြစ်သည်။" },
             { en: "Neither my mother nor my father is free today.", my: "မိခင်နှင့် ဖခင် နှစ်ဦးစလုံးသည် ယနေ့ အားမလပ်ကြပါ။" },

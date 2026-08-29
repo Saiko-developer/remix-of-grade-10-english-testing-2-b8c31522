@@ -79,7 +79,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
             exampleMy: "ကျွန်တော်သည် သင့်အိမ်စာကို ကူညီပေးမည် ဖြစ်ပါသည်။",
             parts: [
               { chunk: "I", role: "[Subject]", glossMy: "ကျွန်တော် — ကတ္တား" },
-              { chunk: "will", role: "will", glossMy: "မည်/ပါမည် — ချက်ချင်း ဆုံးဖြတ်ချက် ပြသော modal" },
+              { chunk: "will", role: "[Future Auxiliary]", glossMy: "မည်/ပါမည် — ချက်ချင်း ဆုံးဖြတ်ချက် ပြသော modal" },
               { chunk: "help", role: "[Base Verb]", glossMy: "ကူညီသည် — ကြိယာအရင်းသဏ္ဌာန်" },
               { chunk: "you with your homework", role: "[Rest]", glossMy: "သင့်ကို အိမ်စာနှင့်ပတ်သက်၍ — ကံနှင့် ကျန်စကားစု" },
             ],
@@ -91,8 +91,8 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
             exampleMy: "သူတို့သည် လာမည့်နှစ်တွင် ကျောင်းသစ်တစ်ကျောင်း ဆောက်လုပ်မည် ဖြစ်ပါသည်။",
             parts: [
               { chunk: "They", role: "[Subject]", glossMy: "သူတို့ — ကတ္တား" },
-              { chunk: "are", role: "am/is/are", glossMy: "ဖြစ်သည် — be verb ကတ္တားနှင့် ကိုက်ညီအောင် ပြောင်းထား" },
-              { chunk: "going to", role: "going to", glossMy: "ကြိုတင်စီစဉ်ထားသော အနာဂတ်" },
+              { chunk: "are", role: "[Linking Verb]", glossMy: "ဖြစ်သည် — be verb ကတ္တားနှင့် ကိုက်ညီအောင် ပြောင်းထား" },
+              { chunk: "going to", role: "[Future Marker]", glossMy: "ကြိုတင်စီစဉ်ထားသော အနာဂတ်" },
               { chunk: "build", role: "[Base Verb]", glossMy: "ဆောက်လုပ်သည် — ကြိယာအရင်းသဏ္ဌာန်" },
               { chunk: "a new school next year", role: "[Rest]", glossMy: "ကျောင်းသစ်တစ်ကျောင်း၊ လာမည့်နှစ်တွင်" },
             ],
@@ -104,7 +104,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
             exampleMy: "ကျွန်တော်တို့သည် သူတို့နှင့်အတူ သောကြာနေ့တွင် ညစာစားရန် ချိန်းထားပါသည်။",
             parts: [
               { chunk: "We", role: "[Subject]", glossMy: "ကျွန်တော်တို့ — ကတ္တား" },
-              { chunk: "are", role: "am/is/are", glossMy: "ဖြစ်သည် — be verb" },
+              { chunk: "are", role: "[Linking Verb]", glossMy: "ဖြစ်သည် — be verb" },
               { chunk: "having", role: "[Verb-ing]", glossMy: "စားနေခြင်း — verb + ing ပုံစံ" },
               { chunk: "dinner with them", role: "[Rest]", glossMy: "သူတို့နှင့်အတူ ညစာ" },
               { chunk: "on Friday", role: "[Future Time Word]", glossMy: "သောကြာနေ့တွင် — ချိန်းထားကြောင်း သက်သေပြသော အချိန်စကားလုံး" },
@@ -122,7 +122,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံးအနေနဲ့ မေးခွန်းနဲ့ ငြင်းဆိုပုံကို ပြောပြမယ်။ will နဲ့ မေးခွန်းလုပ်ရင် will ကို ကတ္တားရှေ့ ရွှေ့လိုက်တာပါပဲ — \"Will you come?\" ။ be going to နဲ့ဆိုရင် be ကို ရှေ့ ရွှေ့တယ် — \"Are you going to come?\" ။ ငြင်းဆိုချင်ရင် will ရဲ့ နောက်မှာ not ထည့်ပြီး won't လို့ ချုံ့နိုင်တယ်၊ be going to ကတော့ be ရဲ့ နောက်မှာ not ထည့်ရုံပါပဲ — \"is not going to\"။ ဒီနေရာအထိ နားလည်ရင် will, be going to, present continuous သုံးမျိုးလုံးကို ကွဲကွဲပြားပြား သုံးနိုင်ပါပြီ ကျောင်းသား၊ တော်တယ်နော်။",
         note: {
           ideaMy: "Will — ချက်ချင်းဆုံးဖြတ်ချက်/ခန့်မှန်းချက်၊ Be going to — ကြိုတင်စီစဉ်ချက်/မြင်ရသောလက္ခဏာ၊ Present Continuous — ချိန်းထားပြီးသား အစီအစဉ်။",
-          formula: "[Subject] + will/am-is-are going to/am-is-are + [Verb] + [Future Time]",
+          formula: "[Subject] + will (+ not) + [Base Verb] + [Rest]",
           examples: [
             { en: "I will answer the phone.", my: "ကျွန်တော် ဖုန်းကို ဖြေမည်။" },
             { en: "She is going to study medicine.", my: "သူမသည် ဆေးပညာ သင်ကြားမည် ဖြစ်သည်။" },
@@ -208,7 +208,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
             exampleEn: "If you heat water to 100°C, it boils.",
             exampleMy: "ရေကို ဒီဂရီ ၁၀၀ အထိ ပူအောင်လုပ်လျှင် ၎င်းသည် ဆူတတ်ပါသည်။",
             parts: [
-              { chunk: "If", role: "If", glossMy: "အကယ်၍ — ဝါကျစတင်ကြောင်း ညွှန်ပြသော စကားလုံး" },
+              { chunk: "If", role: "[Conditional Marker]", glossMy: "အကယ်၍ — ဝါကျစတင်ကြောင်း ညွှန်ပြသော စကားလုံး" },
               { chunk: "you heat water to 100°C", role: "[If-Clause: Present Simple]", glossMy: "ရေကို ဒီဂရီ ၁၀၀ ပူအောင်လုပ်ခြင်း — အခြေအနေ" },
               { chunk: "it boils", role: "[Main Clause: Present Simple]", glossMy: "ဆူသည် — အမြဲမှန်သော ရလဒ်" },
             ],
@@ -219,9 +219,10 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
             exampleEn: "If she studies hard, she will pass the exam.",
             exampleMy: "သူမ ကြိုးစား လေ့လာလျှင် စာမေးပွဲကို အောင်မြင်မည် ဖြစ်ပါသည်။",
             parts: [
-              { chunk: "If", role: "If", glossMy: "အကယ်၍" },
+              { chunk: "If", role: "[Conditional Marker]", glossMy: "အကယ်၍" },
               { chunk: "she studies hard", role: "[If-Clause: Present Simple]", glossMy: "သူမ ကြိုးစားလေ့လာခြင်း — ဖြစ်နိုင်ခြေရှိသော အခြေအနေ" },
-              { chunk: "will pass", role: "will + [Base Verb]", glossMy: "အောင်မြင်မည် — အနာဂတ် ရလဒ်" },
+              { chunk: "she", role: "[Main Clause Subject]", glossMy: "သူမ — အဓိကဝါကျ၏ ကတ္တား" },
+              { chunk: "will pass", role: "[Future Auxiliary + Base Verb]", glossMy: "အောင်မြင်မည် — အနာဂတ် ရလဒ်" },
               { chunk: "the exam", role: "[Rest]", glossMy: "စာမေးပွဲကို — ကံ" },
             ],
           },
@@ -231,9 +232,10 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
             exampleEn: "If I had more time, I would travel around the world.",
             exampleMy: "ကျွန်တော့်တွင် အချိန် ပိုရှိလျှင် ကမ္ဘာတစ်ဝှမ်း ခရီးသွားမည် ဖြစ်ပါသည်။",
             parts: [
-              { chunk: "If", role: "If", glossMy: "အကယ်၍" },
+              { chunk: "If", role: "[Conditional Marker]", glossMy: "အကယ်၍" },
               { chunk: "I had more time", role: "[If-Clause: Past Simple]", glossMy: "အချိန် ပိုရှိလျှင် — လက်ရှိတွင် ဖြစ်နိုင်ခြေ နည်းသော/မရှိသော အခြေအနေ" },
-              { chunk: "would travel", role: "would + [Base Verb]", glossMy: "ခရီးသွားမည် — စိတ်ကူးယဉ် ရလဒ်" },
+              { chunk: "I", role: "[Main Clause Subject]", glossMy: "ကျွန်တော် — အဓိကဝါကျ၏ ကတ္တား" },
+              { chunk: "would travel", role: "[Modal + Base Verb]", glossMy: "ခရီးသွားမည် — စိတ်ကူးယဉ် ရလဒ်" },
               { chunk: "around the world", role: "[Rest]", glossMy: "ကမ္ဘာတစ်ဝှမ်း" },
             ],
           },
@@ -249,7 +251,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
           "နောက်ဆုံး ကော်မာ စည်းမျဉ်းကို ပြောပြမယ်။ if-clause ကို ဝါကျရဲ့ ရှေ့ဆုံးမှာ ထားရင် if-clause ဆုံးတဲ့ နေရာမှာ ကော်မာ တစ်လုံး ခံရမယ် — \"If it rains, we will stay home.\" ဒါပေမယ့် main clause ကို ရှေ့ဆုံးမှာ ပြောင်းထားရင်တော့ ကော်မာ လုံးဝ မလိုတော့ဘူး — \"We will stay home if it rains.\" ဒီနှစ်ချက်ကို အမြဲ နှိုင်းယှဉ်ပြီး မှတ်ထားပါ ကျောင်းသား။ Zero, First, Second Conditional သုံးမျိုးလုံးကို ဒီနေ့ သေချာ ခွဲခြား လေ့ကျင့်ကြည့်ပါနော်။",
         note: {
           ideaMy: "Zero — အမြဲမှန်သော အချက်၊ First — ဖြစ်နိုင်ခြေများသော အနာဂတ်၊ Second — စိတ်ကူးယဉ်/ဖြစ်နိုင်ခြေနည်းသော အခြေအနေ။ if-clause ထဲတွင် will ဘယ်တော့မှ မထည့်ရ။",
-          formula: "If + [Present/Past Simple], [Present Simple / will / would] + [Verb]",
+          formula: "If + [Subject] + [Present Simple Verb], [Subject] + [Present Simple Verb].",
           examples: [
             { en: "If you heat ice, it melts.", my: "ရေခဲကို ပူအောင်လုပ်လျှင် အရည်ပျော်တတ်သည်။" },
             { en: "If it rains, I will stay home.", my: "မိုးရွာလျှင် ကျွန်တော် အိမ်တွင် နေမည်။" },
