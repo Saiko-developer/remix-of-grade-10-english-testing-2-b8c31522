@@ -93,8 +93,9 @@ export const UNIT3_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "Tom", role: "[Subject 1]", glossMy: "တွမ် — ကတ္တားပထမပုဂ္ဂိုလ်" },
               { chunk: "Jerry", role: "[Subject 2]", glossMy: "ဂျယ်ရီ — ကတ္တားဒုတိယပုဂ္ဂိုလ်" },
-              { chunk: "are", role: "[Plural Verb]", glossMy: "ဖြစ်ကြသည် — အများကိန်းကြိယာ" },
-              { chunk: "friends", role: "[Rest]", glossMy: "သူငယ်ချင်းများ" },
+              { chunk: "and", role: "[Coordinator: and]", glossMy: "နှင့် — ကတ္တားနှစ်ခုကို ချိတ်ဆက်သော စကားလုံး" },
+              { chunk: "are", role: "[Plural Linking Verb]", glossMy: "ဖြစ်ကြသည် — အများကိန်း ဆက်စပ်ကြိယာ" },
+              { chunk: "friends", role: "[Complement]", glossMy: "သူငယ်ချင်းများ — ဆက်စပ်ကြိယာ၏ နောက်ရှိ ဖြည့်စွက်ပုဒ်" },
             ],
           },
           {

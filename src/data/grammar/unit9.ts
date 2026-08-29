@@ -221,6 +221,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "If", role: "[Conditional Marker]", glossMy: "အကယ်၍" },
               { chunk: "she studies hard", role: "[If-Clause: Present Simple]", glossMy: "သူမ ကြိုးစားလေ့လာခြင်း — ဖြစ်နိုင်ခြေရှိသော အခြေအနေ" },
+              { chunk: "she", role: "[Main Clause Subject]", glossMy: "သူမ — အဓိကဝါကျ၏ ကတ္တား" },
               { chunk: "will pass", role: "[Future Auxiliary + Base Verb]", glossMy: "အောင်မြင်မည် — အနာဂတ် ရလဒ်" },
               { chunk: "the exam", role: "[Rest]", glossMy: "စာမေးပွဲကို — ကံ" },
             ],
@@ -233,6 +234,7 @@ export const UNIT9_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "If", role: "[Conditional Marker]", glossMy: "အကယ်၍" },
               { chunk: "I had more time", role: "[If-Clause: Past Simple]", glossMy: "အချိန် ပိုရှိလျှင် — လက်ရှိတွင် ဖြစ်နိုင်ခြေ နည်းသော/မရှိသော အခြေအနေ" },
+              { chunk: "I", role: "[Main Clause Subject]", glossMy: "ကျွန်တော် — အဓိကဝါကျ၏ ကတ္တား" },
               { chunk: "would travel", role: "[Modal + Base Verb]", glossMy: "ခရီးသွားမည် — စိတ်ကူးယဉ် ရလဒ်" },
               { chunk: "around the world", role: "[Rest]", glossMy: "ကမ္ဘာတစ်ဝှမ်း" },
             ],
