@@ -79,7 +79,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleMy: "ဘေးအိမ်တွင် နေထိုင်သော အမျိုးသမီးသည် ဆရာဝန် ဖြစ်ပါသည်။",
             parts: [
               { chunk: "The woman", role: "[Noun]", glossMy: "အမျိုးသမီးသည် — ရှင်းပြခံရမည့် အဓိကနာမ်" },
-              { chunk: "who", role: "who", glossMy: "ဆက်စပ်နာမ်စား — ကတ္တားနေရာ" },
+              { chunk: "who", role: "[Relative Pronoun: Subject]", glossMy: "ဆက်စပ်နာမ်စား — ကတ္တားနေရာ" },
               { chunk: "lives", role: "[Verb]", glossMy: "နေထိုင်သည် — who နှင့် ကိုက်ညီသော ကြိယာ" },
               { chunk: "next door", role: "[Rest]", glossMy: "ဘေးအိမ်တွင်" },
             ],
@@ -91,7 +91,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleMy: "ဆရာမ ချီးမွမ်းခဲ့သော ကလေးသည် ကျွန်တော့်အတန်းဖော် ဖြစ်ပါသည်။",
             parts: [
               { chunk: "The boy", role: "[Noun]", glossMy: "ကလေးသည် — ရှင်းပြခံရမည့် အဓိကနာမ်" },
-              { chunk: "whom", role: "whom", glossMy: "ဆက်စပ်နာမ်စား — ကံနေရာ" },
+              { chunk: "whom", role: "[Relative Pronoun: Object]", glossMy: "ဆက်စပ်နာမ်စား — ကံနေရာ" },
               { chunk: "the teacher", role: "[Subject]", glossMy: "ဆရာမ — ဆက်စပ်ခန်းအတွင်းက ကတ္တား" },
               { chunk: "praised", role: "[Verb]", glossMy: "ချီးမွမ်းခဲ့သည်" },
             ],
@@ -104,7 +104,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "The man", role: "[Noun]", glossMy: "ယောက်ျားသည် — အဓိကနာမ်" },
               { chunk: "with", role: "[Preposition]", glossMy: "နှင့်အတူ" },
-              { chunk: "whom", role: "whom", glossMy: "ကံနေရာ ဆက်စပ်နာမ်စား" },
+              { chunk: "whom", role: "[Relative Pronoun: Object]", glossMy: "ကံနေရာ ဆက်စပ်နာမ်စား" },
               { chunk: "she", role: "[Subject]", glossMy: "သူမ" },
               { chunk: "works", role: "[Verb]", glossMy: "အလုပ်လုပ်သည်" },
             ],
@@ -208,7 +208,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleMy: "အနီရောင် အိတ်ပိုင်ရှင် ကလေးသည် ကျွန်တော့်ညီ ဖြစ်ပါသည်။",
             parts: [
               { chunk: "The boy", role: "[Noun]", glossMy: "ကလေးသည် — ရှင်းပြခံရမည့် ပိုင်ရှင်" },
-              { chunk: "whose", role: "whose", glossMy: "ပိုင်ဆိုင်မှု ပြသော ဆက်စပ်နာမ်စား" },
+              { chunk: "whose", role: "[Relative Possessive]", glossMy: "ပိုင်ဆိုင်မှု ပြသော ဆက်စပ်နာမ်စား" },
               { chunk: "bag", role: "[Possessed Noun]", glossMy: "အိတ် — ပိုင်ဆိုင်ခံရသော အရာ" },
               { chunk: "is red", role: "[Verb] + [Rest]", glossMy: "အနီရောင် ဖြစ်သည်" },
             ],
@@ -220,7 +220,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleMy: "ဆေးပညာ တက်ရောက်နေသော သားရှိသော ကျွန်တော့်ဆရာသည် အလွန် ဂုဏ်ယူပါသည်။",
             parts: [
               { chunk: "My teacher", role: "[Noun]", glossMy: "ကျွန်တော့်ဆရာသည် — သိပြီးသား ပိုင်ရှင်" },
-              { chunk: "whose", role: "whose", glossMy: "ပိုင်ဆိုင်မှု ပြသော ဆက်စပ်နာမ်စား" },
+              { chunk: "whose", role: "[Relative Possessive]", glossMy: "ပိုင်ဆိုင်မှု ပြသော ဆက်စပ်နာမ်စား" },
               { chunk: "son", role: "[Possessed Noun]", glossMy: "သား" },
               { chunk: "studies medicine", role: "[Verb] + [Rest]", glossMy: "ဆေးပညာ တက်ရောက်သည်" },
             ],
@@ -231,7 +231,7 @@ export const UNIT11_GRAMMAR: UnitGrammar = {
             exampleEn: "Who's coming to the party tonight?",
             exampleMy: "ဒီညပါတီကို ဘယ်သူတွေ လာကြမှာလဲ။",
             parts: [
-              { chunk: "Who's", role: "Who is", glossMy: "ဘယ်သူ ... နေသလဲ — apostrophe ပါသော အတိုကောက်၊ whose နှင့် အသံတူသော်လည်း အဓိပ္ပာယ် လုံးဝ ကွဲပြား" },
+              { chunk: "Who's", role: "[Question Word + Linking Verb]", glossMy: "ဘယ်သူ ... နေသလဲ — apostrophe ပါသော အတိုကောက်၊ whose နှင့် အသံတူသော်လည်း အဓိပ္ပာယ် လုံးဝ ကွဲပြား" },
               { chunk: "coming", role: "[Verb]", glossMy: "လာနေသည်" },
               { chunk: "to the party tonight", role: "[Rest]", glossMy: "ဒီညပါတီကို" },
             ],

@@ -87,7 +87,7 @@ export const UNIT7_GRAMMAR: UnitGrammar = {
               { chunk: "The meal", role: "[New Subject (old Object)]", glossMy: "အစားအစာ — ခံရသော အရာ၊ ကတ္တားသစ်" },
               { chunk: "is", role: "[be]", glossMy: "ဖြစ်သည် — ပစ္စုပ္ပန်၊ အနည်းကိန်းနှင့် ကိုက်ညီသော be ကြိယာ" },
               { chunk: "cooked", role: "[Past Participle]", glossMy: "ချက်ပြီး — အတိတ်ကြိယာအရာ V3" },
-              { chunk: "by the chef", role: "by + [Agent (old Subject)]", glossMy: "စားဖိုမှူးက — ပြုလုပ်သူ" },
+              { chunk: "by the chef", role: "[by + Agent (old Subject)]", glossMy: "စားဖိုမှူးက — ပြုလုပ်သူ" },
             ],
           },
           {
@@ -99,7 +99,7 @@ export const UNIT7_GRAMMAR: UnitGrammar = {
               { chunk: "The meal", role: "[Subject]", glossMy: "အစားအစာ" },
               { chunk: "is not", role: "[be] + not", glossMy: "မဟုတ်ပါ — be ကြိယာနှင့် not ကို ကပ်၍ ဆောက်ထားသော အနှုတ်ပုံစံ" },
               { chunk: "cooked", role: "[Past Participle]", glossMy: "ချက်ပြီး" },
-              { chunk: "by the chef", role: "by + [Agent]", glossMy: "စားဖိုမှူးက" },
+              { chunk: "by the chef", role: "[by + Agent]", glossMy: "စားဖိုမှူးက" },
             ],
           },
           {
@@ -111,7 +111,7 @@ export const UNIT7_GRAMMAR: UnitGrammar = {
               { chunk: "Is", role: "[be]", glossMy: "be ကြိယာကို ဝါကျဦးဆုံးသို့ ရွှေ့ထားခြင်း" },
               { chunk: "the meal", role: "[Subject]", glossMy: "အစားအစာ" },
               { chunk: "cooked", role: "[Past Participle]", glossMy: "ချက်ပြီး" },
-              { chunk: "by the chef", role: "by + [Agent]", glossMy: "စားဖိုမှူးက" },
+              { chunk: "by the chef", role: "[by + Agent]", glossMy: "စားဖိုမှူးက" },
             ],
           },
         ],
@@ -219,9 +219,9 @@ export const UNIT7_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "The road", role: "[Subject]", glossMy: "ကားလမ်း — ခံရသောအရာ" },
               { chunk: "is", role: "[am/is/are]", glossMy: "ဖြစ်သည် — အနည်းကိန်း၊ ပစ္စုပ္ပန်ကာလ" },
-              { chunk: "being", role: "being", glossMy: "ဆက်လက်ဖြစ်နေကြောင်း ညွှန်ပြသော စကားလုံး" },
+              { chunk: "being", role: "[Continuous Passive Marker]", glossMy: "ဆက်လက်ဖြစ်နေကြောင်း ညွှန်ပြသော စကားလုံး" },
               { chunk: "repaired", role: "[Past Participle]", glossMy: "ပြင်ဆင်ပြီး — V3" },
-              { chunk: "by the workers", role: "by + [Agent]", glossMy: "အလုပ်သမားများက" },
+              { chunk: "by the workers", role: "[by + Agent]", glossMy: "အလုပ်သမားများက" },
             ],
           },
           {
@@ -232,7 +232,7 @@ export const UNIT7_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "The work", role: "[Subject]", glossMy: "အလုပ် — ခံရသော အရာ" },
               { chunk: "has not", role: "[has/have] + not", glossMy: "မဟုတ်သေးပါ — has ကို not နှင့် ကပ်ထား" },
-              { chunk: "been", role: "been", glossMy: "Perfect ခံသဘောတွင် မဖြစ်မနေပါသော စကားလုံး" },
+              { chunk: "been", role: "[Perfect Passive Marker]", glossMy: "Perfect ခံသဘောတွင် မဖြစ်မနေပါသော စကားလုံး" },
               { chunk: "finished", role: "[Past Participle]", glossMy: "ပြီးစီးပြီး — V3" },
             ],
           },
@@ -244,7 +244,7 @@ export const UNIT7_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "Can", role: "[Modal]", glossMy: "နိုင်သလား — ကြိယာအကူ၊ မေးခွန်းအတွက် ရှေ့သို့ ရွှေ့ထား" },
               { chunk: "this problem", role: "[Subject]", glossMy: "ဒီပြဿနာ — ခံရသော အရာ" },
-              { chunk: "be", role: "be", glossMy: "Modal နောက်တွင် အမြဲ base ပုံစံအတိုင်း ထားရသော be" },
+              { chunk: "be", role: "[Base Passive Marker]", glossMy: "Modal နောက်တွင် အမြဲ base ပုံစံအတိုင်း ထားရသော be" },
               { chunk: "solved", role: "[Past Participle]", glossMy: "ဖြေရှင်းပြီး — V3" },
             ],
           },

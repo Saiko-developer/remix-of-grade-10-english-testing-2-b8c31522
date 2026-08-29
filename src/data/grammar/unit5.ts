@@ -88,7 +88,7 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleMy: "ကျွန်တော့်အဖိုးသည် ညနေတိုင်း ပုံပြင်များကို ကျွန်တော်တို့အား ပြောပြခဲ့ဖူးပါသည်။",
             parts: [
               { chunk: "My grandfather", role: "[Subject]", glossMy: "ကျွန်တော့်အဖိုး — ကတ္တား" },
-              { chunk: "used to", role: "used to", glossMy: "အတိတ်က ... ခဲ့ဖူးသည် — ဖွဲ့စည်းပုံ" },
+              { chunk: "used to", role: "[Past Habit Marker]", glossMy: "အတိတ်က ... ခဲ့ဖူးသည် — ဖွဲ့စည်းပုံ" },
               { chunk: "tell", role: "[V1]", glossMy: "ပြောပြသည် — ကြိယာ base form" },
               { chunk: "us folk tales every night", role: "[Rest]", glossMy: "ကျွန်တော်တို့အား ညနေတိုင်း ပုံပြင်များကို" },
             ],
@@ -100,8 +100,8 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleMy: "ကျွန်တော်တို့ အိမ်တွင် တီဗီတစ်လုံးမှ ရှိခဲ့ဖူးခြင်း မရှိခဲ့ပါ။",
             parts: [
               { chunk: "We", role: "[Subject]", glossMy: "ကျွန်တော်တို့ — ကတ္တား" },
-              { chunk: "didn't", role: "did not", glossMy: "did + not ၏ တိုတောင်းပုံစံ" },
-              { chunk: "use to", role: "use to", glossMy: "\"used\" မှ d ဖယ်ထားသော base form" },
+              { chunk: "didn't", role: "[Negative Auxiliary]", glossMy: "did + not ၏ တိုတောင်းပုံစံ" },
+              { chunk: "use to", role: "[Past Habit Marker: use to]", glossMy: "\"used\" မှ d ဖယ်ထားသော base form" },
               { chunk: "have", role: "[V1]", glossMy: "ရှိသည် — ကြိယာ base form" },
               { chunk: "a television at home", role: "[Rest]", glossMy: "အိမ်တွင် တီဗီတစ်လုံး" },
             ],
@@ -112,9 +112,9 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleEn: "Did you use to live in Yangon?",
             exampleMy: "မင်း အရင်က ရန်ကုန်မှာ နေခဲ့ဖူးလား။",
             parts: [
-              { chunk: "Did", role: "Did", glossMy: "မေးခွန်းအတွက် အထောက်အကူပြု ကြိယာ" },
+              { chunk: "Did", role: "[Question Auxiliary]", glossMy: "မေးခွန်းအတွက် အထောက်အကူပြု ကြိယာ" },
               { chunk: "you", role: "[Subject]", glossMy: "မင်း — ကတ္တား" },
-              { chunk: "use to", role: "use to", glossMy: "did ရှိပြီးသားကြောင့် base form" },
+              { chunk: "use to", role: "[Past Habit Marker: use to]", glossMy: "did ရှိပြီးသားကြောင့် base form" },
               { chunk: "live", role: "[V1]", glossMy: "နေထိုင်သည် — ကြိယာ base form" },
               { chunk: "in Yangon", role: "[Rest]", glossMy: "ရန်ကုန်မှာ" },
             ],
@@ -223,7 +223,7 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleMy: "သူတို့သည် ပရောဂျက်ကို ပြီးအောင် လုပ်ပြီးသားဖြစ်ပြီး၊ ကျွန်တော်ကတော့ မစတင်ရသေးပါ။",
             parts: [
               { chunk: "They", role: "[Subject]", glossMy: "သူတို့ — ကတ္တား" },
-              { chunk: "have already finished", role: "have + already + V3", glossMy: "ပြီးအောင် လုပ်ပြီးသားဖြစ်သည် — already က have ၏ နောက်၊ ကြိယာ၏ ရှေ့" },
+              { chunk: "have already finished", role: "[Auxiliary + already + Past Participle]", glossMy: "ပြီးအောင် လုပ်ပြီးသားဖြစ်သည် — already က have ၏ နောက်၊ ကြိယာ၏ ရှေ့" },
               { chunk: "the project", role: "[Object]", glossMy: "ပရောဂျက် — ကံ" },
               { chunk: "I haven't started yet", role: "[Subject] + haven't + V3 + yet", glossMy: "ကျွန်တော် မစတင်ရသေး — yet ဝါကျအဆုံးတွင်" },
             ],
@@ -235,9 +235,9 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleMy: "သူသည် ဤနေရာတွင် ၂၀၁၈ ခုနှစ်မှစ၍ အလုပ်လုပ်နေဆဲ ဖြစ်ပါသည်။",
             parts: [
               { chunk: "He", role: "[Subject]", glossMy: "သူ — ကတ္တား, single ဖြစ်၍ has" },
-              { chunk: "has been working", role: "has + been + V-ing", glossMy: "ဆက်တိုက် အလုပ်လုပ်နေဆဲ — Continuous ပုံစံ" },
+              { chunk: "has been working", role: "[Auxiliary + been + Verb-ing]", glossMy: "ဆက်တိုက် အလုပ်လုပ်နေဆဲ — Continuous ပုံစံ" },
               { chunk: "here", role: "[Rest]", glossMy: "ဤနေရာတွင်" },
-              { chunk: "since 2018", role: "since + [Time]", glossMy: "၂၀၁၈ ခုနှစ်မှစ၍ — အစပြု အချိန်မှတ်" },
+              { chunk: "since 2018", role: "[since + Time Marker]", glossMy: "၂၀၁၈ ခုနှစ်မှစ၍ — အစပြု အချိန်မှတ်" },
             ],
           },
           {
@@ -246,9 +246,9 @@ export const UNIT5_GRAMMAR: UnitGrammar = {
             exampleEn: "Have you ever visited Bagan? — No, I have never been there.",
             exampleMy: "မင်း ပုဂံကို တစ်ခါမှ သွားဖူးလား။ — မရှိသေးပါ၊ ကျွန်တော် ဘယ်တော့မှ မသွားဖူးပါ။",
             parts: [
-              { chunk: "Have", role: "Have", glossMy: "မေးခွန်းအထောက်အကူပြု" },
+              { chunk: "Have", role: "[Question Auxiliary]", glossMy: "မေးခွန်းအထောက်အကူပြု" },
               { chunk: "you", role: "[Subject]", glossMy: "မင်း — ကတ္တား" },
-              { chunk: "ever", role: "ever", glossMy: "တစ်ခါမျှ — have ၏ နောက်" },
+              { chunk: "ever", role: "[Frequency Adverb]", glossMy: "တစ်ခါမျှ — have ၏ နောက်" },
               { chunk: "visited", role: "[V3]", glossMy: "သွားရောက်ခဲ့ဖူးသည်" },
               { chunk: "I have never been there", role: "[Subject] + have + never + V3", glossMy: "ဘယ်တော့မှ မသွားဖူး — never က have ၏ နောက်" },
             ],

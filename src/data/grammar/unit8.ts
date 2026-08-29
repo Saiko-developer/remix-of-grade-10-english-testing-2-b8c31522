@@ -92,7 +92,7 @@ export const UNIT8_GRAMMAR: UnitGrammar = {
             parts: [
               { chunk: "The problem", role: "[Subject/Receiver]", glossMy: "ထိုပြဿနာ" },
               { chunk: "was", role: "[be]", glossMy: "ဖြစ်သည် — be ကြိယာ" },
-              { chunk: "not", role: "not", glossMy: "မ...ဘူး — ငြင်းဆိုမှု" },
+              { chunk: "not", role: "[Negative Marker]", glossMy: "မ...ဘူး — ငြင်းဆိုမှု" },
               { chunk: "solved", role: "[Past Participle]", glossMy: "ဖြေရှင်းခြင်း ခံရသည်" },
             ],
           },
@@ -224,7 +224,7 @@ export const UNIT8_GRAMMAR: UnitGrammar = {
             exampleMy: "အဖေက နံနက်တိုင်း ကော်ဖီသောက်ပြီး အမေကလည်း ဒီအတိုင်း သောက်ပါသည်။",
             parts: [
               { chunk: "My father drinks coffee every morning", role: "[Sentence 1]", glossMy: "အဖေ၏ ရိုးမူဝါကျ" },
-              { chunk: "so", role: "so", glossMy: "ထို့အတူ / အလားတူပင် — ခိုင်းနှိုင်းမှု ညွှန်းသည့် စကားလုံး" },
+              { chunk: "so", role: "[Additive Word: so]", glossMy: "ထို့အတူ / အလားတူပင် — ခိုင်းနှိုင်းမှု ညွှန်းသည့် စကားလုံး" },
               { chunk: "does", role: "[Auxiliary]", glossMy: "ဖြစ်သည် — ကတ္တား \"my mother\" (singular) နှင့် present tense ကို ကိုက်ညီအောင် ရွေးထားသော အကူကြိယာ" },
               { chunk: "my mother", role: "[Subject 2]", glossMy: "အမေ — ဒုတိယကတ္တား" },
             ],
@@ -236,7 +236,7 @@ export const UNIT8_GRAMMAR: UnitGrammar = {
             exampleMy: "ကျွန်တော်က လက်ဖက်ရည်ကို မကြိုက်ဘဲ သူမကလည်း မကြိုက်ပါ။",
             parts: [
               { chunk: "I don't like tea", role: "[Negative Sentence 1]", glossMy: "ငြင်းဆိုသော ပထမဝါကျ" },
-              { chunk: "neither", role: "neither", glossMy: "ထို့အတူ မဟုတ် / မကြိုက်ပါ ထပ်တူ — ဆန့်ကျင်သဘော ခိုင်းနှိုင်းမှု" },
+              { chunk: "neither", role: "[Additive Word: neither]", glossMy: "ထို့အတူ မဟုတ် / မကြိုက်ပါ ထပ်တူ — ဆန့်ကျင်သဘော ခိုင်းနှိုင်းမှု" },
               { chunk: "does", role: "[Auxiliary]", glossMy: "ကတ္တား \"she\" နှင့် ကိုက်ညီသော အကူကြိယာ" },
               { chunk: "she", role: "[Subject 2]", glossMy: "သူမ — ဒုတိယကတ္တား" },
             ],
